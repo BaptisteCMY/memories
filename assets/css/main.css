@@ -18,3 +18,22 @@
     padding: 10px;
 }
 
+.button_validation_inscription:hover {
+background-color: rgb(0, 255, 17);
+}
+
+
+.button_validation_inscription {
+    display: inline-block;
+    padding: 20px 30px;
+    background-color: #bc1919;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 500px;
+}
+
+.email {
+    width: 100px; 
+    height: 50px; 
+    
+}

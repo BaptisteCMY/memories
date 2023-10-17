@@ -6,47 +6,34 @@
     <title>Document</title>
     <link rel="stylesheet" href ="assets/css/main.css">
     <title>Exemple de lien cliquable stylisé</title>
-    <style>
-        .button-link {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #3498db;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-    </style>
 </head>
 <body style="background-image: url(https://img.freepik.com/vecteurs-libre/fond-ondule-espace-copie_52683-65230.jpg?size=626&ext=jpg&ga=GA1.1.1413502914.1697414400&semt=sph); background-size: 1520px 800px;">
     
 
 </br></br></br></br></br></br></br></br></br></br></br></br></br></br>
-    
-<center><label for="pseudo">pseudo : </label>
-    <input type="text" name="pseudo" id="pseudo"/>
-</br></br>
 
-    <label for="mdp">mot de passe : </label>
-    <input type="password" name="passe" id="mdp"/></center>
-
+<div class="input-container"></div>
+<center><label for="email"></label>
+    <input type="email" id="email" name="email" placeholder="e-mail" required></center>
 </br>
-    <div class="input-container"></div>
-    <center><label for="email">e-mail :</label>
-        <input type="email" id="email" name="email" required>
-            
+
+<center><label for="pseudo"></label>
+    <input type="text" name="pseudo" id="pseudo" placeholder="pseudo"/>
 </br></br>
-    <center><label for="pays">nationalité :</label>
-                <select name="pays" id="pays">
-                    <option value="belgique">Belgique</option>
-                    <option value="France">France</option>
-                    <option value="suisse">suisse</option>
-                    <option value="autres">autres</option>
-                </select></center>
+
+    <label for="mdp"></label>
+    <input type="password" name="passe" id="mdp" placeholder="mot de passe" /></center>
+
+            
+</br>
+    <center><label for="comfirm_mdp"></label>
+        <input type="password" id="comfirm_mdp" name="comfirm_mdp" placeholder="comfirmez le mot de passe" required></center>
 
             </br></br>
 
-            
-            <a href="index.html" class="button-link">valider inscription</a>
+            <center>
+            <a href="index.html" class="button_validation_inscription">valider inscription</a>
+        </center>
 </center>
 </body>
 </html>
