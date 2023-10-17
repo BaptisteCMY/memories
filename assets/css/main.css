@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+body{
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+
+}
+.input-container {
+    position: relative;
+    width: 300px;
+    margin: 20px;
+}
+
+.input-container label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.7); /* Fond transparent */
+    padding: 0 5px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+}
+
+.button_validation_inscription:hover {
+background-color: rgb(18, 149, 25);
+}
+
+
+.button_validation_inscription {
+    display: inline-block;
+    padding: 25px 30px;
+    background-color: #bc1919;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.email {
+    width: 100px; 
+    height: 50px; 
+    
+}
+
+input {
+    width: 200px;
+    padding: 10px;
+    border: 2px solid #3498db;
+    border-radius: 0.5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s;
+    background-color: #065489;
+}
+
+/* Style au survol */
+input:hover {
+    border-color: #ff5733;
+}
+
+h1 {
+    color: aliceblue;
+    font-size: 50px;
+    
+}
+
+.button_validation_inscription {
+    margin-right: 350px; /* Décalage de 20 pixels vers la gauche */
+    padding: 10px;
+    width: 100px;
+    height: 30px;
+}
