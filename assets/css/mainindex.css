@@ -1,0 +1,18 @@
+.img_and_txt{
+    display: flex;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.cadre{
+    width: 33%;
+    text-align: center;
+}
+
+.img{
+    width: 250px;
+}
+
+main{
+    background-color: rgb(0, 0, 71);
+}
