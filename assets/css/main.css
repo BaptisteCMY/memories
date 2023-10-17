@@ -1,26 +1,19 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Formulaire avec message sur fond transparent</title>
-    <style>
-        .input-container {
-            position: relative;
-            width: 300px;
-            margin: 20px;
-        }
 
-        .input-container label {
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-color: rgba(255, 255, 255, 0.7); /* Fond transparent */
-            padding: 0 5px;
-        }
+.input-container {
+    position: relative;
+    width: 300px;
+    margin: 20px;
+}
 
-        .input-container input {
-            width: 100%;
-            padding: 10px;
-        }
-    </style>
-</head>
-<body>
+.input-container label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.7); /* Fond transparent */
+    padding: 0 5px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+}
