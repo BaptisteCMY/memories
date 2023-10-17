@@ -1,14 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
-body{
+html,body{
     font-family: 'Roboto Slab', serif;
     margin: 0;
+
 }
 
 .header {
+ 
+  margin-top: -10%;
+  opacity: 0.8;
+  z-index: 99;   
     overflow: hidden;
     background-color: #13102F;
-    padding: 20px 10px;
+  padding: 50px 90px;
   }
   
   .header a {
@@ -32,13 +37,17 @@ body{
     color: #F29522;
   }
   
-  .header a.active {
-
-  }
   
   .header-right {
     float: right;
   }
+
+.under-header{
+  width: 100%;
+    background-image: url('../img/purple-background.jpg');
+    padding: 150px 0px;
+    z-index: -1;   
+    }
   
   @media screen and (max-width: 500px) {
     .header a {
