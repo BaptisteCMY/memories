@@ -37,3 +37,18 @@ background-color: rgb(0, 255, 17);
     height: 50px; 
     
 }
+
+input {
+    width: 200px;
+    padding: 10px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+/* Style au survol */
+input:hover {
+    border-color: #ff5733;
+}
