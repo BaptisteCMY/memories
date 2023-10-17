@@ -30,11 +30,11 @@ background-color: rgb(18, 149, 25);
 
 .button_validation_inscription {
     display: inline-block;
-    padding: 25px 30px;
-    background-color: #bc1919;
+    
+    background-color: #EC9224;
     color: #fff;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 .email {
@@ -46,12 +46,12 @@ background-color: rgb(18, 149, 25);
 input {
     width: 200px;
     padding: 10px;
-    border: 2px solid #3498db;
-    border-radius: 0.5px;
+border-style: none;
+    border-radius: 4px;
     font-size: 16px;
     outline: none;
     transition: border-color 0.2s;
-    background-color: #065489;
+    background-color: #272645;
 }
 
 /* Style au survol */
@@ -69,5 +69,5 @@ h1 {
     margin-right: 350px; /* Décalage de 20 pixels vers la gauche */
     padding: 10px;
     width: 100px;
-    height: 30px;
+    height: 27px;
 }
