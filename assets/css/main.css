@@ -52,7 +52,9 @@ input {
     outline: none;
     transition: border-color 0.2s;
     background-color: #272647;
+    color: rgb(210, 210, 209);
 }
+
 
 /* Style au survol */
 input:hover {
