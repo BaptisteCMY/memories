@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+
+
 body{
     font-family: 'Roboto Slab', serif;
     margin: 0;
@@ -91,6 +94,30 @@ background-color: rgb(18, 149, 25);
     
 }
 
+.espace-button{
+    font-size:15px;
+    font-family:Arial;
+    width:30%;
+    height:50px;
+    border-width:1px;
+    color:#333333;
+    border-color:#EC9224;
+    font-weight:bold;
+    border-top-left-radius:6px;
+    border-top-right-radius:6px;
+    border-bottom-left-radius:6px;
+    border-bottom-right-radius:6px;
+    box-shadow: 0px 1px 0px 0px #fff6af;
+    text-shadow: 0px 1px 0px #ffee66;
+    background:linear-gradient(#EC9224, #EC9224);
+    cursor: pointer;
+    
+}
+
+.espace-button:hover {
+    background: linear-gradient(#fb900e, #fb900e);
+  }
+
 textarea{
     width: 30%;height: 180px;background-color: #272645;
     border-style: none;
@@ -101,7 +128,7 @@ textarea{
     background-color: #272645;
 }
 input {
-    width: 10%;
+    width: 16.9%;
     padding: 10px;
 border-style: none;
     border-radius: 4px;
@@ -128,4 +155,32 @@ h1 {
     padding: 10px;
     width: 100px;
     height: 30px;
+}
+
+
+.container-forms{
+    display: flex;
+    grid-gap: 20px;
+}
+
+.passwordformcontainer{
+width: 50%;
+
+}
+
+.divider {	
+   
+    display: table; 
+    font-size: 24px; 
+    text-align: center; 
+    width: 0.1%; 	
+    height: 250px;	
+    background-color: #272645;				
+    margin: 40px auto;					
+}
+
+
+
+.emailformcontainer{
+width: 50%;
 }

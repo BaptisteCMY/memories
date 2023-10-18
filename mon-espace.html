@@ -27,7 +27,7 @@
             </div>
             
           </div>
-          <center><br><h1 style="margin-top: 0px; display: block;">NOUS CONTACTER</h1></center>
+          <center><br><h1 style="margin-top: 0px; display: block;">Mon Espace</h1></center>
         </div>
 <br>
         
@@ -35,54 +35,70 @@
 
 
  <div class="block-container" style="justify-content: center;">
-    <div class="block">
+    <div class="block" style="width: 70%; height: auto;">
         <br><br>
-        <center><div class="circle-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+        <center><div class="circle-icon"><i class="fa-solid fa-user"></i></div>
             
-            <p style="color: white;">06 05 04 03 02</p>
+            <p style="color: white;">Mon Espace</p>
 
-            
+<div class="container-forms">
+
+    <div class="passwordformcontainer">
+        <form action="actions/editpassword.php" method="POST">
+<center><p style="color: white;">Reinitialiser mon mot de passe</p></center>
+
+<input style="width: 70%;" type="password" placeholder="Ancien mot de passe" name="old_pass">
+<br><br>
+<input style="width: 70%;" type="password" placeholder="Nouveau mot de passe" name="newpassword">
+<br><br>
+<input style="width: 70%;" type="password" placeholder="Nouveau mot de passe (Confirmez)" name="newpasswordconfirm">
+<br><br>
+<center><button type="submit" style="width: 74%; height:40px;" class="espace-button">Modifier mon mot de passe</button></center>
+</form>
+    </div>
+    <div class="divider"></div>
+    <div class="emailformcontainer">
+        <form action="actions/editemail.php" method="POST">
+    <center><p style="color: white;">Modifier mon adresse e-mail</p></center>
+    <input style="width: 70%;" type="password" placeholder="Ancien email" name="old_email">
+    <br><br>
+    <input style="width: 70%;" type="password" placeholder="Nouvel email" name="new_email">
+    <br><br>
+    <input style="width: 70%;" type="password" placeholder="Mot de passe" name="passwordconfirmation">
+    <br><br>
+    <center><button type="submit" style="width: 74%; height:40px;" class="espace-button">Modifier mon mot de passe</button></center>
+        </form>
+
+
+
+
+    </div>
+
+ 
+
+</div>
+
+
+         <!-- 
+            <p style="color: white;">Sélectionnez une action a effectuer : </p>
+            <br>
+
+           <button  class="espace-button">Modifier mon adresse email</button>
+           <br><img style="width: 26%; height: 90px;" src="https://ded7t1cra1lh5.cloudfront.net/media/127665/dcfd45c783d8ac7044e079759fd9f58f6ff80125/original/divider-tan.png?1458323347"><br>
+           <button  class="espace-button">Modifier mon mot de passe</button>
+           <br><img style="width: 26%; height: 90px;" src="https://ded7t1cra1lh5.cloudfront.net/media/127665/dcfd45c783d8ac7044e079759fd9f58f6ff80125/original/divider-tan.png?1458323347"><br>
+            <br><br>
+            -->   
         </center>
        
 
     </div>
 
-
-    
-
-    <div class="block">
-        <br><br>
-        <center><div class="circle-icon"><i class="fa-solid fa-envelope"></i></div>
-        
-            <p style="color: white;">support@powerofmemory.com</p>
-        </center>
-
-    </div>
-    <div class="block">
-        <br><br>
-        <center><div class="circle-icon"><i class="fa-solid fa-location-dot"></i></div>
-            <p style="color: white;">Paris</p>
-        </center>
-
-    </div>
  
 
 
        
  </div>
- <div class="contact-form" style="margin-left: 8.7%;">
-    <div class="namemail">
-        <input type="text" placeholder="Nom" name="Nom">
-        <input type="text" placeholder="Email" name="email">
-    </div>
-<br>
-    <input style="width: 36.7%;" type="text" placeholder="Sujet" name="subject">
-    <br><br>
-    <textarea style="width: 37.7%;" placeholder="Message"></textarea>
-    <br>
-    <a href="#" style="width: 66px; height: 24px;" class="button_validation_inscription" class="button_validation_inscription">Envoyer</a>
-<br><br>
-</div> 
 
 
  
