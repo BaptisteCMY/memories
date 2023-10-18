@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');*/
+body{
+    font-family: 'Roboto Slab', serif;
+    /*font-family: 'Pixelify Sans', sans-serif;*/
+    margin: 0;
+
+}
+.input-container {
+    position: relative;
+    width: 300px;
+    margin: 20px;
+}
+
+.input-container label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.7); /* Fond transparent */
+    padding: 0 5px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+}
+
+.button_validation_inscription:hover {
+background-color: rgba(180, 9, 199, 0.807);
+}
+
+
+.button_validation_inscription {
+    display: inline-block;
+    background-color: rgb(180, 9, 199);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 0;
+    line-height: 3.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(180, 9, 199);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow:
+      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.email {
+    width: 100px; 
+    height: 50px; 
+
+}
+
+input {
+    width: 200px;
+    padding: 10px;
+    border-radius: 0.5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s; 
+}
+input:hover {
+    border-color: #ff5733;
+}
+h1 {
+    color: aliceblue;
+    font-size: 50px;
+
+}
+.buttonN {
+    
+    border: 0;
+    line-height: 3.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(180, 9, 199);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow:
+      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+      
+  }
+
+  .buttonT {
+    
+    border: 0;
+    line-height: 3.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(180, 9, 199);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow:
+      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+      
+  }
+.couleur1 {
+    color: aliceblue;
+}
+.container {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    background-color: #f0f0f0;
+}
+
+#sideInput {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
