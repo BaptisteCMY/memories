@@ -24,14 +24,14 @@ body{
 }
 
 .button_validation_inscription:hover {
-background-color: rgb(0, 255, 17);
+
 }
 
 
 .button_validation_inscription {
     display: inline-block;
-    padding: 25px 30px;
-    background-color: #bc1919;
+    
+
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -46,13 +46,14 @@ background-color: rgb(0, 255, 17);
 input {
     width: 200px;
     padding: 10px;
-    border: 2px solid #3498db;
-    border-radius: 0.5px;
+border-style: none;
+    border-radius: 4px;
     font-size: 16px;
     outline: none;
     transition: border-color 0.2s;
-    background-color: #065489;
+    background-color: #272645;
 }
+
 
 /*Style au survol */
 input:hover {
@@ -71,3 +72,4 @@ h1 {
     width: 100px;
     height: 30px;
 }
+>>>>>>>>> Temporary merge branch 2
