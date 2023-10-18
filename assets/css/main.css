@@ -71,3 +71,49 @@ h1 {
     width: 100px;
     height: 30px;
 }
+
+
+table{
+    color:aliceblue;
+    width: 1000px;
+    text-align: center;
+}
+
+table, caption, th, td {
+
+    border: 2px solid rgb(152, 47, 208)
+
+    
+    }
+
+    td{
+        height: 30px;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        color: aqua;
+      }
+      
+      .flex-row {
+        display: flex;
+        justify-content: space-between;
+        margin: 5px 0;
+        text-align: center;
+      }
+      
+      .flex-header {
+        background-color: rgb(152, 47, 208) ;
+        color: #fff;
+        padding: 5px;
+        flex: 1;
+        text-align: center;
+      }
+      
+      .flex-data {
+        border: 1px solid #ccc;
+        padding: 5px;
+        flex: 1;
+        text-align: center;
+      }
