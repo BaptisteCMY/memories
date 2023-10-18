@@ -1,9 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+
+
 body{
     font-family: 'Roboto Slab', serif;
     margin: 0;
 
 }
+
+.block-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-gap: 25px;
+    margin-bottom: 80px;
+}
+
+.block{
+    width: 400px;
+    height: 220px;
+    background-color: #0E0B26;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.namemail{
+    grid-gap: 20px;
+    display: flex;
+}
+
+.contact-form
+{
+
+
+    display: block;
+margin: auto;
+
+}
+
+.circle-icon{
+    width: 80px;
+    height: 80px;
+    background: #EC9224;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+.circle-icon i{
+    color: white;
+margin-top: 32%;
+font-size: 30px;
+
+}
+
 .input-container {
     position: relative;
     width: 300px;
@@ -19,6 +70,7 @@ body{
 }
 
 .input-container input {
+    resize: vertical;
     width: 100%;
     padding: 10px;
 }
@@ -34,29 +86,61 @@ background-color: rgb(210, 100, 21);
     background-color: #fb8b00;
     color: #fff;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 2px;
 }
-
 .email {
     width: 100px; 
     height: 50px; 
+
+}
+
+.espace-button{
+    font-size:15px;
+    font-family:Arial;
+    width:30%;
+    height:50px;
+    border-width:1px;
+    color:#333333;
+    border-color:#EC9224;
+    font-weight:bold;
+    border-top-left-radius:6px;
+    border-top-right-radius:6px;
+    border-bottom-left-radius:6px;
+    border-bottom-right-radius:6px;
+    box-shadow: 0px 1px 0px 0px #fff6af;
+    text-shadow: 0px 1px 0px #ffee66;
+    background:linear-gradient(#EC9224, #EC9224);
+    cursor: pointer;
     
 }
 
-input {
-    width: 200px;
-    padding: 10px;
-    border: 2px solid #0f0e30;
-    border-radius: 0.5px;
+.espace-button:hover {
+    background: linear-gradient(#fb900e, #fb900e);
+  }
+
+textarea{
+    width: 30%;height: 180px;background-color: #272645;
+    border-style: none;
+    border-radius: 4px;
     font-size: 16px;
     outline: none;
     transition: border-color 0.2s;
-    background-color: #272647;
-    color: rgb(210, 210, 209);
+    background-color: #272645;
+}
+input {
+    width: 16.9%;
+    padding: 10px;
+border-style: none;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s;
+    background-color: #272645;
 }
 
 
-/* Style au survol */
+
+/*Style au survol */
 input:hover {
     border-color: #ff5733;
 }
@@ -64,7 +148,7 @@ input:hover {
 h1 {
     color: aliceblue;
     font-size: 50px;
-    
+
 }
 
 .button_validation_inscription {
@@ -73,49 +157,3 @@ h1 {
     width: 100px;
     height: 30px;
 }
-
-
-table{
-    color:aliceblue;
-    width: 1000px;
-    text-align: center;
-}
-
-table, caption, th, td {
-
-    border: 2px solid rgb(152, 47, 208)
-
-    
-    }
-
-    td{
-        height: 30px;
-    }
-
-    .flex-container {
-        display: flex;
-        flex-direction: column;
-        color: aqua;
-      }
-      
-      .flex-row {
-        display: flex;
-        justify-content: space-between;
-        margin: 5px 0;
-        text-align: center;
-      }
-      
-      .flex-header {
-        background-color: rgb(152, 47, 208) ;
-        color: #fff;
-        padding: 5px;
-        flex: 1;
-        text-align: center;
-      }
-      
-      .flex-data {
-        border: 1px solid #ccc;
-        padding: 5px;
-        flex: 1;
-        text-align: center;
-      }

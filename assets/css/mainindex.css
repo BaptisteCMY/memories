@@ -1,18 +1,129 @@
-.img_and_txt{
-    display: flex;
-    padding-left: 300px;
-    padding-right: 300px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 
-.cadre{
-    width: 33%;
-    text-align: center;
+body{
+    font-family: 'Open Sans', sans-serif; ;
 }
-
-.img{
-    width: 250px;
-}
-
 main{
-    background-color: rgb(0, 0, 71);
+    background-color: #151231;
+}
+body{
+    color: aliceblue;
+}
+
+.img_stats{
+    width: 530px;
+    border-radius: 3px;
+}
+
+.stats{
+    padding-left: 200px;
+    display: flex;
+}
+.firststat{
+    background-color: #3724a0;
+    padding: 25px;
+    border-radius: 3px;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    margin-right: 25px;
+}
+.secstat{
+    background-color: #16a15f;
+    padding: 25px;
+    border-radius: 3px;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+
+}
+
+.topstats{
+    padding-left: 40px;
+    padding-bottom: 25px;
+    display: flex;
+
+}
+
+.botstats{
+    padding-left: 40px;
+    display: flex;
+
+}
+
+.thirdstat{
+    background-color: #b91ca8;
+    padding: 25px;
+    border-radius: 3px;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    margin-right: 25px;
+
+}
+
+.fourthstat{
+    background-color: #ec9123;
+    padding: 25px;
+    border-radius: 3px;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+
+
+}
+
+.quatrestats{
+    font-size: 1.2em;
+}
+
+.triplepaysages{
+    display: flex;
+    padding-left: 200px ;
+    padding-right: 200px;
+}
+
+.paysage1{
+    height: 331.4px;
+}
+
+.paysage2et3{
+    padding-left: 40px;
+    display: flex;
+}
+
+.paysage2{
+    height: 331.4px;
+}
+
+.paysage3{
+    height: 331.4px; 
+    padding-left: 40px;
+}
+
+.text123{
+    display: flex;
+
+    justify-content: center;
+}
+
+.text_number{
+    display: flex;
+
+}
+
+.number{
+    color: #3724a0;
+    font-size: 22px;
+
+}
+
+.text{
+    padding-left: 20px ;
+    text-decoration: double;
+    width: 300px;
+}
+
+h3{
+    font-size: 25px;
 }
