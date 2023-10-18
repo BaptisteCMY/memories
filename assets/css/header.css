@@ -3,20 +3,22 @@
 html,body{
     font-family: 'Roboto Slab', serif;
     margin: 0;
+    padding-top: 0;
 
 }
 
 .header {
  
   margin-top: -10%;
-  opacity: 0.8;
+  opacity: 0.9;
   z-index: 99;   
     overflow: hidden;
-    background-color: #13102F;
+    background-color: #151231;
   padding: 50px 90px;
   }
   
   .header a {
+
     float: left;
     color: white;
     text-align: center;
@@ -45,6 +47,7 @@ html,body{
 .under-header{
   width: 100%;
     background-image: url('../img/purple-background.jpg');
+    background-size: cover;
     padding: 150px 0px;
     z-index: -1;   
     }
@@ -59,4 +62,32 @@ html,body{
     .header-right {
       float: none;
     }
+
+    .header{
+      margin-top: -59%;
+    }
   }
+
+  @media screen and (max-width: 422px) {
+
+    .header{
+      margin-top: -69%;
+    }
+  }
+
+  @media screen and (max-width: 368px) {
+
+    .header{
+      margin-top: -77%;
+    }
+  }
+
+  @media screen and (max-width: 1100px) {
+
+    .header{
+      margin-top: -25%;
+    }
+  }
+
+
+  
