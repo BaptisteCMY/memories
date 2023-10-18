@@ -1,9 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
 
 body{
-    font-family: 'Roboto Slab', serif;
+    font-family:Arial, Helvetica, sans-serif;
     margin: 0;
+
 }
+
+h1{
+  font-size: 4em;
+}
+
 
 .bouton_jouer{
   display: inline-block;
@@ -25,13 +31,8 @@ body{
     background-color: rgb(0, 179, 255);
   }
 
-  tml,body{
-    font-family: 'Roboto Slab', serif;
-    margin: 0;
-
-}
-
 .header {
+ 
   margin-top: -10%;
   opacity: 0.8;
   z-index: 99;   
@@ -68,13 +69,13 @@ body{
 
 .under-header{
   width: 100%;
-
+  background-image: url('../img/purple-background\ copie.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
   padding: 160px 0px;
   z-index: -1;   
 }
-  
+
   @media screen and (max-width: 500px) {
     .header a {
       float: none;
