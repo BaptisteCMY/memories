@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 html,body{
     font-family: 'Roboto Slab', serif;
@@ -9,11 +9,11 @@ html,body{
 
 .header {
  
-  margin-top: -17%;
-  opacity: 0.6;
+  margin-top: -10%;
+  opacity: 0.9;
   z-index: 99;   
     overflow: hidden;
-    background-color: #2f2685;
+    background-color: #151231;
   padding: 50px 90px;
   }
   
@@ -48,7 +48,7 @@ html,body{
   width: 100%;
     background-image: url('../img/purple-background.jpg');
     background-size: cover;
-    padding: 250px 0px;
+    padding: 150px 0px;
     z-index: -1;   
     }
   
