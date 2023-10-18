@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');*/
 body{
     font-family: 'Roboto Slab', serif;
+    /*font-family: 'Pixelify Sans', sans-serif;*/
     margin: 0;
 
 }
@@ -24,17 +26,29 @@ body{
 }
 
 .button_validation_inscription:hover {
-background-color: rgb(0, 255, 17);
+background-color: rgba(180, 9, 199, 0.807);
 }
 
 
 .button_validation_inscription {
     display: inline-block;
-    padding: 25px 30px;
-    background-color: #bc1919;
+    background-color: rgb(180, 9, 199);
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
+    border: 0;
+    line-height: 3.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(180, 9, 199);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow:
+      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .email {
@@ -46,32 +60,19 @@ background-color: rgb(0, 255, 17);
 input {
     width: 200px;
     padding: 10px;
-    border: 2px solid #3498db;
     border-radius: 0.5px;
     font-size: 16px;
     outline: none;
-    transition: border-color 0.2s;
-    background-color: #065489;
+    transition: border-color 0.2s; 
 }
-
-/*Style au survol */
 input:hover {
     border-color: #ff5733;
 }
-
 h1 {
     color: aliceblue;
     font-size: 50px;
 
 }
-
-.button_validation_inscription {
-    margin-right: 350px; /* Décalage de 20 pixels vers la gauche */
-    padding: 10px;
-    width: 100px;
-    height: 30px;
-}
-
 .buttonN {
     
     border: 0;
