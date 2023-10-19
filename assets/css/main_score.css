@@ -24,18 +24,22 @@ body{
 }
 
 .button_validation_inscription:hover {
-background-color: rgb(210, 100, 21);
+background-color:#ec912385;
 }
 
 
 .button_validation_inscription {
-    display: inline-block;
-    padding: 25px 30px;
-    background-color: #fb8b00;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
+    margin-right: 350px; /* Décalage de 20 pixels vers la gauche */
+    padding: 10%;
+    width: 2px;
+    height: 45px;
+    border: none;
+    color: #ffffff;
+    background-color: #ec9123;
+    border-radius: 2px;
+    font-size: 14px;
 }
+
 
 .email {
     width: 100px; 
@@ -68,10 +72,11 @@ h1 {
 }
 
 .button_validation_inscription {
-    margin-right: 350px; /* Décalage de 20 pixels vers la gauche */
+    margin-right: 365px; /* Décalage de 20 pixels vers la gauche */
     padding: 10px;
     width: 100px;
-    height: 30px;
+    height: 45px;
+
 }
 
 
@@ -119,3 +124,5 @@ table, caption, th, td {
         flex: 1;
         text-align: center;
       }
+
+

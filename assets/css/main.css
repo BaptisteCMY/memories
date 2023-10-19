@@ -149,10 +149,13 @@ h1 {
 
 .button_validation_inscription {
     margin-right: 350px; /* Décalage de 20 pixels vers la gauche */
-    padding: 10px;
+    padding: 1%;
     width: 100px;
-    height: 30px;
+    height: 4%;
+    border: none;
+    color: #ffffff;
 }
+
 
 
 .container-forms{
@@ -185,6 +188,10 @@ width: 50%;
 #contentContainer{
 margin: 20px;
 }
+
+
+
+
 
 
 

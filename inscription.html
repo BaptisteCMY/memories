@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href ="assets/css/main.css">
+    <link rel="stylesheet" href ="assets/css/main_score.css">
     <link rel="stylesheet" href ="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <script src="https://kit.fontawesome.com/fd7b39a087.js" crossorigin="anonymous"></script>
@@ -42,7 +42,7 @@
 <br>
         
     </br>
-
+    <form action="traitement.php" method="post">
 <div class="input-container"></div>
 <center><label for="email"></label>
     <input type="email" id="email" name="email" placeholder="  Email" style="height: 25px; width: 450px; font-size: 1.1em; " required> </center>
@@ -60,13 +60,14 @@
     <center><label for="comfirm_mdp"></label>
         <input type="password" id="comfirm_mdp" name="comfirm_mdp" placeholder="  confirmez le mot de passe" style="height: 25px; width: 450px; font-size: 1.1em; " required></center>
 
-            </br></br>
+          </br>
 
-            <center>
-            <a href="index.html" class="button_validation_inscription" class="button_validation_inscription">Inscription</a>
-            <br><br>
+          <center>
+          <button class="button_validation_inscription">Inscription</button>
+          <br><br>
         </center>
 </center>
+</form>
 
 <footer>
     <div class="footer-content">
@@ -86,15 +87,15 @@
         <li style="list-style-type : none;"><p style="color: white;">Power of memory</p></li>
 <br>
         <li >
-          <span>Jouer ! </span>
+          <span> <a href="jeu.html" class="liens">Jouer </a> </span>
          </li>
          <br>
          <li>
-        <span>Les scores</span>
+        <span> <a href="score.html" class="liens"> les scores</a></span>
          </li>
          <br>
          <li>
-          <span>Nous contacter </span>
+          <span> <a href="contact.html" class="liens"> contacter </a></span>
          </li>
          <br><br>
       </ul>
