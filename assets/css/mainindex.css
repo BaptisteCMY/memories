@@ -27,6 +27,8 @@ body{
     width: 200px;
     height: 100px;
     margin-right: 25px;
+    padding-bottom: 40px;
+    padding-top: 10px;
 }
 .secstat{
     background-color: #16a15f;
@@ -35,6 +37,8 @@ body{
     text-align: center;
     width: 200px;
     height: 100px;
+    padding-bottom: 40px;
+    padding-top: 10px;
 
 }
 
@@ -59,7 +63,8 @@ body{
     width: 200px;
     height: 100px;
     margin-right: 25px;
-
+    padding-bottom: 40px;
+    padding-top: 10px;
 }
 
 .fourthstat{
@@ -69,7 +74,8 @@ body{
     text-align: center;
     width: 200px;
     height: 100px;
-
+    padding-bottom: 40px;
+    padding-top: 10px;
 
 }
 

@@ -1,5 +1,6 @@
 
 
+
 body{
     font-family:Arial, Helvetica, sans-serif;
     margin: 0;
@@ -25,7 +26,7 @@ h1{
   cursor: pointer;
   margin: 5px;
   border: none;
-  border-radius: 3px;
+  border-radius: 2px;
   }
 
 .bouton_jouer:hover {
@@ -33,15 +34,20 @@ h1{
   }
 
 .header {
- 
-  margin-top: -10%;
+  margin-top: -11.2%;
   opacity: 0.8;
   z-index: 99;   
   overflow: hidden;
   padding-right: 90px;
   padding-left: 90px;
-  padding-top: 15px;
+
   }
+
+.lien:hover{
+  border-top: 5px solid #ec9123 ;
+  color: #ec9123;
+}
+  
   
   .header a {
     float: left;
