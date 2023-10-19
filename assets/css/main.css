@@ -251,3 +251,79 @@ h1 {
     top: 50px;
     left: 20px;
 }
+
+.choix{
+    text-align: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.choix_diff_global{
+    margin-left: 120px;
+    margin-right: 60px;
+    width: 30%;
+}
+
+
+.choixdiff123{
+    display: flex;
+    justify-content: center;
+}
+
+.choixdiff{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+    height: 60px;
+}
+
+.button_choixdiff{
+    width: 75%;
+    height: 60px;
+    background-color: #EC9224;
+    border-radius: 2px;
+    border: none;
+    color: #ffffff;
+}
+
+.choixtheme123{
+    display: flex;
+    justify-content: center;
+}
+
+.choixtheme{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+    height: 60px;
+
+}
+
+.button_choixtheme{
+    width: 75%;
+    height: 60px;
+    background-color: #EC9224;
+    border-radius: 2px;
+    border: none;
+    color: #ffffff;
+}
+
+.choix_theme_global{
+    margin-right: 120px;
+    width: 30%;
+}
+
+.button_choixtheme:hover{
+    background-color: #ec9224cd;
+}
+.button_choixdiff:hover{
+    background-color: #ec9224cd;
+}
+
+.button_choixtheme:active{
+    border: 2 px red solid ;
+}
+.button_choixdiff:hover{
+    background-color: #ec9224cd;
+}
