@@ -6,10 +6,10 @@ body{
     margin: 0;
 }
 
-h1{
-  font-size: 4em;
-}
 
+.titreprinc{
+  margin-top: 10vw;
+}
 
 
 .bouton_jouer{
@@ -17,15 +17,11 @@ h1{
   background-color: #ec9123;
   color: #eeeeee;
   text-align: center;
-  font-size: 16px;
-  width: 160px;
-  height: 50px;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
+  font-size: 1.2vw;
+  width: 9vw;
+  height: 3.5vw;
   cursor: pointer;
-  margin: 5px;
+  margin: 1vw;
   border: none;
   border-radius: 2px;
   }
@@ -35,17 +31,16 @@ h1{
   }
 
 .header {
-  margin-top: -11.2%;
-  opacity: 0.8;
-  z-index: 99;   
+  margin-top: -11.2vw;
+  opacity: 0.8; 
   overflow: hidden;
-  padding-right: 90px;
-  padding-left: 90px;
+  padding-right: 2vw;
+  padding-left: 2vw;
 
   }
 
 .lien:hover{
-  border-top: 5px solid #ec9123 ;
+  border-top: 0.3vw solid #ec9123 ;
   color: #ec9123;
 }
   
@@ -54,20 +49,14 @@ h1{
     float: left;
     color: white;
     text-align: center;
-    padding: 12px;
+    padding: 1vw;
     text-decoration: none;
-    font-size: 18px; 
-    line-height: 25px;
-    border-radius: 4px;
+    font-size: 1vw; 
+    line-height: 3vw;
   }
   
-  .header a.logo {
-    font-size: 25px;
-    font-weight: bold;
-  }
   
   .header a:hover {
-    
     color: #F29522;
   }
   
@@ -77,15 +66,16 @@ h1{
   }
 
 .under-header{
-  width: 100%;
+  width: 100vw;
   background-image: url('../img/purple-background\ copie.jpg');
+  background-size: 100vw;
   background-repeat: no-repeat;
-  background-size: 100%;
-  padding: 160px 0px;
+  background-size: 100vw;
+  padding: 11.1vw 0vw;
   z-index: -1;   
 }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 10vw) {
     .header a {
       float: none;
       display: block;
