@@ -83,7 +83,7 @@ background-color: rgb(158, 148, 16);
     background-color: #EC9224;
     color: #fff;
     text-decoration: none;
-    border-radius: 2px;
+    border-radius: 5px;
 }
 .email {
     width: 100px; 
@@ -140,53 +140,60 @@ border-style: none;
 input:hover {
     border: 2px solid #ff5733;
 }
-
 h1 {
     color: aliceblue;
     font-size: 50px;
     
 }
+.buttonN {
+    
+    border: 0;
+    line-height: 3.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(180, 9, 199);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow:
+      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+      
+  }
 
-.button_validation_inscription {
-    margin-right: 350px; /* Décalage de 20 pixels vers la gauche */
-    padding: 1%;
-    width: 100px;
-    height: 4%;
-    border: none;
-    color: #ffffff;
+  .buttonT {
+    
+    border: 0;
+    line-height: 3.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(180, 9, 199);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow:
+      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+      
+  }
+.couleur1 {
+    color: aliceblue;
+}
+.container {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    background-color: #f0f0f0;
 }
 
-
-
-.container-forms{
-    display: flex;
-    grid-gap: 20px;
-}
-
-.passwordformcontainer{
-width: 50%;
-
-}
-
-.divider {	
-   
-    display: table; 
-    font-size: 24px; 
-    text-align: center; 
-    width: 0.1%; 	
-    height: 250px;	
-    background-color: #272645;				
-    margin: 40px auto;			
-}
-
-
-
-.emailformcontainer{
-width: 50%;
-}
-
-#contentContainer{
-margin: 20px;
+#sideInput {
+    position: absolute;
+    top: 50px;
+    left: 20px;
 }
 
 
