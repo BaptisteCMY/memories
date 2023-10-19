@@ -16,14 +16,15 @@
     
         <div class="header">
             <div id="contentContainer">
-            <a href="" class="logo">The Power of memory</a>
-            <div class="header-right">
-              <a class="active" href="">Acceuil</a>
-              <a href="">Jeu</a>
-              <a href="">Scores</a>
-              <a href="">Connexion</a>
-              <a href="">Inscription</a>
-              <a href="#about">Nous contacter</a>
+              <a href="#default" class="lien" style="font-size: 1.5em;">The Power of memory</a>
+              <div class="header-right">
+              <a href="index.html" class="lien">Accueil</a>
+              <a href="jeu.html" class="lien">Jeu</a>
+              <a href="score.html" class="lien">Scores</a>
+              <a href="connexion.html" class="lien">Connexion</a>
+              <a href="inscription.html" class="lien">Inscription</a>
+              <a href="mon-espace.html" class="lien">Mon espace</a>
+              <a href="contact.html" class="lien">Nous contacter</a>
               </div>
             </div>
             
@@ -36,7 +37,7 @@
 
 
  <div class="block-container" style="justify-content: center;">
-    <div class="block" style="width: 70%; height: auto;">
+    <div class="block" style="width: 70%; height: 900px;">
         <br><br>
         <center><div class="circle-icon"><i class="fa-solid fa-user"></i></div>
             
@@ -46,28 +47,29 @@
 
     <div class="passwordformcontainer">
         <form action="actions/editpassword.php" method="POST">
-<center><p style="color: white;">Reinitialiser mon mot de passe</p></center>
+<center><p style="color: white; font-size: 1.5em;">Reinitialiser mon mot de passe</p></center>
 
 <input style="width: 70%;" type="password" placeholder="Ancien mot de passe" name="old_pass">
 <br><br>
 <input style="width: 70%;" type="password" placeholder="Nouveau mot de passe" name="newpassword">
 <br><br>
-<input style="width: 70%;" type="password" placeholder="Nouveau mot de passe (Confirmez)" name="newpasswordconfirm">
+<input style="width: 70%;" type="password" placeholder="Confirmer nouveau mot de passe" name="newpasswordconfirm">
 <br><br>
-<center><button type="submit" style="width: 74%; height:40px;" class="espace-button">Modifier mon mot de passe</button></center>
+<center><button type="submit" style="width: 60%; height:40px; border: none;" class="espace-button">Modifier mon mot de passe</button></center>
 </form>
+<br><br><br><br> 
     </div>
     <div class="divider"></div>
     <div class="emailformcontainer">
         <form action="actions/editemail.php" method="POST">
-    <center><p style="color: white;">Modifier mon adresse e-mail</p></center>
-    <input style="width: 70%;" type="password" placeholder="Ancien email" name="old_email">
+    <center><p style="color: white; font-size: 1.5em;">Modifier mon adresse e-mail</p></center>
+    <input style="width: 70%;" type="email" placeholder="Ancien email" name="old_email">
     <br><br>
-    <input style="width: 70%;" type="password" placeholder="Nouvel email" name="new_email">
+    <input style="width: 70%;" type="email" placeholder="Nouvel email" name="new_email">
     <br><br>
     <input style="width: 70%;" type="password" placeholder="Mot de passe" name="passwordconfirmation">
     <br><br>
-    <center><button type="submit" style="width: 74%; height:40px;" class="espace-button">Modifier mon mot de passe</button></center>
+    <center><button type="submit" style="width: 60%; height:40px; border: none;" class="espace-button">Modifier mon mot de passe</button></center>
         </form>
 
 
