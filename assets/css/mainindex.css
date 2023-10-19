@@ -27,6 +27,8 @@ body{
     width: 200px;
     height: 100px;
     margin-right: 25px;
+    padding-bottom: 40px;
+    padding-top: 10px;
 }
 .secstat{
     background-color: #16a15f;
@@ -35,6 +37,8 @@ body{
     text-align: center;
     width: 200px;
     height: 100px;
+    padding-bottom: 40px;
+    padding-top: 10px;
 
 }
 
@@ -59,7 +63,8 @@ body{
     width: 200px;
     height: 100px;
     margin-right: 25px;
-
+    padding-bottom: 40px;
+    padding-top: 10px;
 }
 
 .fourthstat{
@@ -69,7 +74,8 @@ body{
     text-align: center;
     width: 200px;
     height: 100px;
-
+    padding-bottom: 40px;
+    padding-top: 10px;
 
 }
 
@@ -126,4 +132,29 @@ body{
 
 h3{
     font-size: 25px;
+}
+
+.equipe123{
+    display: flex;
+    margin-left: 200px;
+    margin-right: 200px;
+    justify-content: center;
+    
+}
+
+.equipe{
+    background-color: #0c0b26;
+    margin: 15px;
+    width: 450px;
+    height: 400px;
+    text-align: center;
+}
+img{
+    display: inline-block;
+}
+.container{
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
 }

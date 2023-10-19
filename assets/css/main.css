@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 
 
+=======
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+
+
+>>>>>>> e9d20b82809e27f8313236256902bd1771479e7c
 body{
     font-family: 'Open Sans', sans-serif;
     margin: 0;
@@ -74,16 +81,82 @@ font-size: 30px;
 }
 
 .button_validation_inscription:hover {
+<<<<<<< HEAD
 background-color: rgb(158, 148, 16);
+=======
+background-color: rgb(210, 100, 21);
+>>>>>>> e9d20b82809e27f8313236256902bd1771479e7c
 }
 
 
 .button_validation_inscription {
     display: inline-block;
+<<<<<<< HEAD
     background-color: #EC9224;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
+=======
+    
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 0;
+    line-height: 3.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow:
+      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.button_play {
+    display: inline-block;
+    background-color: rgb(180, 9, 199);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 0;
+    line-height: 3.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(180, 9, 199);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow:
+      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.button_play {
+    display: inline-block;
+    background-color: rgb(180, 9, 199);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 0;
+    line-height: 3.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(180, 9, 199);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow:
+      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+>>>>>>> e9d20b82809e27f8313236256902bd1771479e7c
 }
 .email {
     width: 100px; 
@@ -132,11 +205,18 @@ border-style: none;
     border-radius: 4px;
     font-size: 16px;
     outline: none;
+<<<<<<< HEAD
     transition: border-color 0.2s;
     background-color: #272645;
 }
 
 
+=======
+    transition: border-color 0.2s; 
+}
+
+/*Style au survol */
+>>>>>>> e9d20b82809e27f8313236256902bd1771479e7c
 input:hover {
     border: 2px solid #ff5733;
 }

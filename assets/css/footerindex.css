@@ -46,8 +46,11 @@ ul{
       display: block;
       text-align: left;
     }
-    
-  
-  }
+}
+
+.lienfooter{
+    text-decoration: none;
+    color: #cab8c1;
+}
 
 

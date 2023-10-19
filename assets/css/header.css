@@ -12,8 +12,8 @@ html,body{
   margin-top: -10%;
   opacity: 0.9;
   z-index: 99;   
-    overflow: hidden;
-    background-color: #151231;
+  overflow: hidden;
+  background-color: #151231;
   padding: 50px 90px;
   }
   
@@ -90,4 +90,3 @@ html,body{
   }
 
 
-  

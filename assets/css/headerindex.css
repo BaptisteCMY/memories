@@ -1,9 +1,13 @@
 
 
+
 body{
     font-family:Arial, Helvetica, sans-serif;
     margin: 0;
+<<<<<<< HEAD
 
+=======
+>>>>>>> e9d20b82809e27f8313236256902bd1771479e7c
 }
 
 h1{
@@ -27,7 +31,7 @@ h1{
   cursor: pointer;
   margin: 5px;
   border: none;
-  border-radius: 3px;
+  border-radius: 2px;
   }
 
 .bouton_jouer:hover {
@@ -35,16 +39,25 @@ h1{
   }
 
 .header {
- 
-  margin-top: -10%;
+  margin-top: -11.2%;
   opacity: 0.8;
   z-index: 99;   
   overflow: hidden;
   padding-right: 90px;
   padding-left: 90px;
-  padding-top: 15px;
+
   }
+<<<<<<< HEAD
   
+=======
+
+.lien:hover{
+  border-top: 5px solid #ec9123 ;
+  color: #ec9123;
+}
+  
+  
+>>>>>>> e9d20b82809e27f8313236256902bd1771479e7c
   .header a {
     float: left;
     color: white;
@@ -90,4 +103,8 @@ h1{
     .header-right {
       float: none;
     }
+<<<<<<< HEAD
   }
+=======
+  }
+>>>>>>> e9d20b82809e27f8313236256902bd1771479e7c
