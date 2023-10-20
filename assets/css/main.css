@@ -610,6 +610,13 @@ box-shadow:  14px 14px 28px #05040f,
 
 }
 
+.button-open{
+position: fixed;
+   
+             
+
+}
+
 
 .chat-title{
     display: flex;
