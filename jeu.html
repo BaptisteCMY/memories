@@ -10,7 +10,7 @@
       <script src="https://kit.fontawesome.com/fd7b39a087.js" crossorigin="anonymous"></script>
     </head>
     <body style="background-color: #151231;; background-size: 1520px 800px;">
-      <div class="under-header" id="top">        
+      <div class="under-header">        
         <div class="header">
           <a href="index.html" class="lien" style="font-size: 1.5em;">The Power of memory</a>
           <div class="header-right">
@@ -73,6 +73,14 @@
         </div>
       </div>
       <center><div class="border_jeu"></div></center>
+
+  
+
+
+  
+      
+   
+      
       <br><br>
       <div class="jeu_carte">
         <div class="ligne_jeu">
@@ -103,6 +111,28 @@
           </div>
         </div>
         </div>
+      
+        <div class="chat-popup" id="chat-popup" style="margin-top: -122px;">
+          
+          <div class="chat-title"><div style="display: flex;  font-size: 15; width: 200%;"><span style="margin-left: 10px; color: white;margin-top: 2vh;"> Username  <br><span style="color: green; font-size: 9px; top: 50px;"><i class="fa-regular fa-circle-dot"></i> EN LIGNE</span></span> </div>
+            <div style="width: 53%;display: flex;"><a id="closebtn" style="margin-top: 2vh;float:right; color: white; font-size: 19px;"><i class="fa-solid fa-circle-xmark"></i></a></div>
+          </div>
+         
+          <div class="bubble left">Salut comment tu vas ?</div>
+      <div class="bubble right">Ca va et toi</div>
+      <div class="bubble left">Ca va</div>
+      <div class="bubble right">Super</div>
+      <div class="bubble right">Parfait alors</div>
+      
+
+
+
+
+      <input type="text" style="width: 94.5%;border-radius: 0px;  position: fixed; bottom: 0;" placeholder="Saisissez votre message...">
+        </div>
+
+      
+
       <footer style="background-color: #0c0b26;">
         <div class="footer-content">
             <div class="info">
@@ -134,10 +164,29 @@
         </div>
         <br>
         <br>
-        <div class="ancre"><a href="#top" style="color: #1e1c38; text-align: center; text-decoration: none; font-size: 3vw; padding: 0 1vw;">^</a></div>
         <br>
         <p class="mot_gris" style="margin-left: 13.5vw;">Copyright © 2022 Tous droits réservés</p>
-        <br>  
+        <br>
     </footer>
     </body>
+
+    <script>
+      let closebtn = document.getElementById("closebtn");
+      let popup = document.getElementById("chat-popup");
+  
+      closebtn.addEventListener("click", () => {
+
+        if(popup.style.display != "none")
+        {
+       
+        popup.style.display = 'none'; 
+        }
+
+        else{
+          popup.style.display = 'grid'; 
+        }
+
+
+       });
+  </script>
     </html>
