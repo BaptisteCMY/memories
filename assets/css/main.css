@@ -635,3 +635,86 @@ left: 0;
     border-bottom: 4px double rgb(156, 156, 156);
     justify-content: center;
 }
+
+.chat-popup{
+    display: grid;
+    gap: 5px;
+    position:fixed;
+    background: rgb(105,18,100);
+    background: radial-gradient(circle, rgba(105,18,100,1) 0%, rgba(21,18,49,1) 100%);
+right:0;
+width: 25vw;
+height: 60vh;
+box-shadow:  14px 14px 28px #05040f,
+             -14px -14px 28px #15123d;
+
+
+
+
+
+
+}
+
+
+.chat-title{
+    display: flex;
+    grid-gap: 180px;
+    width: 100%;
+    margin: 0;
+    border-top-left-radius: 12px;
+
+
+
+    height: 8vh;
+    background-color: #0D0B26;
+
+}
+
+.chat-typearea{
+    background-color: white;
+    position:fixed;
+    width: 20%;
+    height: 10vh;
+    float: left;
+    bottom: 0;
+}
+
+
+.bubble {
+  --r: 25px; 
+  --t: 30px;
+
+  max-width: 300px;
+  padding: calc(2*var(--r)/3);
+  -webkit-mask: 
+    radial-gradient(var(--t) at var(--_d) 0,#0000 98%,#000 102%) 
+      var(--_d) 100%/calc(100% - var(--r)) var(--t) no-repeat,
+    conic-gradient(at var(--r) var(--r),#000 75%,#0000 0) 
+      calc(var(--r)/-2) calc(var(--r)/-2) padding-box, 
+    radial-gradient(50% 50%,#000 98%,#0000 101%) 
+      0 0/var(--r) var(--r) space padding-box;
+  background-color: rgb(33, 29, 29);
+  color: #fff;
+}
+.left {
+  --_d: 0%;
+  border-left: var(--t) solid #0000;
+  margin-right: var(--t);
+  place-self: start;
+}
+.right {
+  --_d: 100%;
+  border-right: var(--t) solid #0000;
+  margin-left: var(--t);
+  place-self: end;
+}
+
+.chatinput
+{
+bottom: 0;
+left: 0;
+}
+
+.all_container{
+    right: 0
+}
