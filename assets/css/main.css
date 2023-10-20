@@ -591,3 +591,28 @@ left: 0;
 .button1234:hover{
     background-color: #ec9224b7;
 }
+
+.global_theme{
+    justify-content: center;
+    display: flex;
+    margin: 0 10vw;
+}
+
+.txt_imgtheme{
+    background-color: #0c0b26;;
+    padding: 10px 20px;
+    margin: 4vw;
+    width: 30vw;
+    height: 16.5vw;
+}
+
+.txt_theme{
+    text-align: center; color: white;
+    font-family:'Times New Roman', Times, serif;
+
+}
+.img_theme{
+    width: 12vw;
+    margin: 0 1.9vw;
+}
+
