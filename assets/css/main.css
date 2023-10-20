@@ -481,22 +481,7 @@ box-shadow:  14px 14px 28px #05040f,
 }
 
 
-.bubble {
-  --r: 25px; /* the radius */
-  --t: 30px; /* the size of the tail */
-  
-  max-width: 300px;
-  padding: calc(2*var(--r)/3);
-  -webkit-mask: 
-    radial-gradient(var(--t) at var(--_d) 0,#0000 98%,#000 102%) 
-      var(--_d) 100%/calc(100% - var(--r)) var(--t) no-repeat,
-    conic-gradient(at var(--r) var(--r),#000 75%,#0000 0) 
-      calc(var(--r)/-2) calc(var(--r)/-2) padding-box, 
-    radial-gradient(50% 50%,#000 98%,#0000 101%) 
-      0 0/var(--r) var(--r) space padding-box;
-  background-color: rgb(33, 29, 29);
-  color: #fff;
-}
+
 .left {
   --_d: 0%;
   border-left: var(--t) solid #0000;
@@ -594,4 +579,15 @@ left: 0;
 }
 .button_choixdiff:hover{
     background-color: #ec9224cd;
+}
+.button1234{
+    background-color: #ec9123;
+    width: 8vw; 
+    height: 3vw;
+    border: none; 
+    color: white; 
+    border-radius: 2px
+}
+.button1234:hover{
+    background-color: #ec9224b7;
 }
