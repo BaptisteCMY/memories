@@ -11,58 +11,58 @@ html,body{
  
   margin-top: -10%;
   opacity: 0.9;
-  z-index: 99;   
+  z-index: 99;
   overflow: hidden;
   background-color: #151231;
-  padding: 3vw 9vw;
+  padding: 41px 90px;
   }
   .lien:hover{
-    border-top: 5vw solid #ec9123 ;
+    border-top: 5px solid #ec9123 ;
     color: #ec9123;
   }
-  
+
   .header a {
 
     float: left;
     color: white;
     text-align: center;
-    padding: 1vw;
+    padding: 12px;
     text-decoration: none;
-    font-size: 1vw; 
-    line-height: 5vw;
-    border-radius: 4vw;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
   }
-  
+
   .header a.logo {
-    font-size: 2vw;
+    font-size: 25px;
     font-weight: bold;
   }
-  
+
   .header a:hover {
-    
+
     color: #F29522;
   }
-  
-  
+
+
   .header-right {
     float: right;
   }
 
 .under-header{
-    width: 100%;
+  width: 100%;
     background-image: url('../img/purple-background.jpg');
     background-size: cover;
-    padding: 10vw 0px;
-    z-index: -1;   
+    padding: 100px 0px;
+    z-index: -1;
     }
-  
-  @media screen and (max-width: 50vw) {
+
+  @media screen and (max-width: 500px) {
     .header a {
       float: none;
       display: block;
       text-align: left;
     }
-    
+
     .header-right {
       float: none;
     }
@@ -92,5 +92,3 @@ html,body{
       margin-top: -25%;
     }
   }
-
-

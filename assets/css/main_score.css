@@ -101,6 +101,7 @@ table, caption, th, td {
         display: flex;
         flex-direction: column;
         color: aqua;
+        margin: 0 3vw;
       }
       
       .flex-row {
