@@ -14,10 +14,10 @@ html,body{
   z-index: 99;   
   overflow: hidden;
   background-color: #151231;
-  padding: 41px 90px;
+  padding: 3vw 9vw;
   }
   .lien:hover{
-    border-top: 5px solid #ec9123 ;
+    border-top: 5vw solid #ec9123 ;
     color: #ec9123;
   }
   
@@ -26,15 +26,15 @@ html,body{
     float: left;
     color: white;
     text-align: center;
-    padding: 12px;
+    padding: 1vw;
     text-decoration: none;
-    font-size: 18px; 
-    line-height: 25px;
-    border-radius: 4px;
+    font-size: 1vw; 
+    line-height: 5vw;
+    border-radius: 4vw;
   }
   
   .header a.logo {
-    font-size: 25px;
+    font-size: 2vw;
     font-weight: bold;
   }
   
@@ -49,14 +49,14 @@ html,body{
   }
 
 .under-header{
-  width: 100%;
+    width: 100%;
     background-image: url('../img/purple-background.jpg');
     background-size: cover;
-    padding: 100px 0px;
+    padding: 10vw 0px;
     z-index: -1;   
     }
   
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 50vw) {
     .header a {
       float: none;
       display: block;
