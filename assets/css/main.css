@@ -53,51 +53,7 @@ font-size: 30px;
 
 }
 
-.input-container {
-    position: relative;
-    width: 300px;
-    margin: 20px;
-}
 
-.input-container label {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(255, 255, 255, 0.7); /* Fond transparent */
-    padding: 0 5px;
-}
-
-.input-container input {
-    resize: vertical;
-    width: 100%;
-    padding: 10px;
-}
-
-.button_validation_inscription:hover {
-background-color: rgb(158, 148, 16);
-}
-
-
-.button_validation_inscription {
-    display: inline-block;
-    
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    border: 0;
-    line-height: 3.5;
-    padding: 0 20px;
-    font-size: 1rem;
-    text-align: center;
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
-    border-radius: 10px;
-    
-    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
-    box-shadow:
-      inset 2px 2px 3px rgba(255, 255, 255, 0.6),
-      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
-}
 
 .button_play {
     display: inline-block;

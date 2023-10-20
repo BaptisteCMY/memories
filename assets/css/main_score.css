@@ -15,7 +15,7 @@ body{
     top: 0;
     left: 0;
     background-color: rgba(255, 255, 255, 0.7); /* Fond transparent */
-    padding: 0 5px;
+    padding: 5px;
 }
 
 .input-container input {
@@ -29,16 +29,16 @@ background-color:#ec912385;
 
 
 .button_validation_inscription {
-    margin-right: 350px; /* Décalage de 20 pixels vers la gauche */
-    padding: 10%;
-    width: 2px;
-    height: 45px;
+    margin-right: 35vw; /* Décalage de 20 pixels vers la gauche */
+    padding: 10vw;
+    width: 5vw;
+    height: 2vw;
     border: none;
     color: #ffffff;
     background-color: #ec9123;
-    border-radius: 2px;
-    font-size: 14px;
-}
+    border-radius: 0.3vw;
+    font-size: 1vw;
+}   
 
 
 .email {
@@ -48,11 +48,11 @@ background-color:#ec912385;
 }
 
 input {
-    width: 200px;
-    padding: 10px;
-    border: 2px solid #0f0e30;
-    border-radius: 0.5px;
-    font-size: 16px;
+    width: 200vw;
+    padding: 1vw;
+    border: 1px solid #0f0e30;
+    border-radius: 0.2vw;
+    font-size: 16vw;
     outline: none;
     transition: border-color 0.2s;
     background-color: #272647;
@@ -72,10 +72,10 @@ h1 {
 }
 
 .button_validation_inscription {
-    margin-right: 365px; /* Décalage de 20 pixels vers la gauche */
-    padding: 10px;
-    width: 100px;
-    height: 45px;
+    margin-right: 26vw; /* Décalage de 20 pixels vers la gauche */
+    padding: 1vw;
+    width: 7vw;
+    height: 3vw;
 
 }
 
@@ -101,6 +101,7 @@ table, caption, th, td {
         display: flex;
         flex-direction: column;
         color: aqua;
+        margin: 0 3vw;
       }
       
       .flex-row {
