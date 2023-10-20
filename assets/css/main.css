@@ -513,8 +513,8 @@ left: 0;
 }
 
 .choix_diff_global{
-    margin-left: 120px;
-    margin-right: 60px;
+    margin-left: 12vw;
+    margin-right: 6vw;
     width: 30%;
 }
 
@@ -527,13 +527,13 @@ left: 0;
 .choixdiff{
     margin-left: 10px;
     margin-right: 10px;
-    width: 100%;
-    height: 60px;
+    width: 100vw;
+    height: 3vw;
 }
 
 .button_choixdiff{
     width: 75%;
-    height: 60px;
+    height: 4vw;
     background-color: #EC9224;
     border-radius: 2px;
     border: none;
@@ -548,8 +548,8 @@ left: 0;
 .choixtheme{
     margin-left: 10px;
     margin-right: 10px;
-    width: 100%;
-    height: 60px;
+    width: 100vw;
+    height: 4vw;
 
 }
 
@@ -563,7 +563,7 @@ left: 0;
 }
 
 .choix_theme_global{
-    margin-right: 120px;
+    margin-right: 12vw;
     width: 30%;
 }
 
@@ -616,3 +616,22 @@ left: 0;
     margin: 0 1.9vw;
 }
 
+.jeu_carte{
+    justify-content: center;
+    margin: 1vw 20vw;
+}
+.ligne_jeu{
+    display: flex;
+    justify-content: center;
+    margin: 1vw 0;
+}
+.dos_carte{
+    width: 12vw;
+    margin: 0 0.6vw;
+}
+
+.border_jeu{
+    width: 80%;
+    border-bottom: 4px double rgb(156, 156, 156);
+    justify-content: center;
+}
