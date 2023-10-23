@@ -139,3 +139,4 @@ ORDER BY g.game_name, g.game_strength,s.game_score ASC;
 WHERE   g.game_name = "The Power Of Memory";
 /*      p.pseudo = "jonathan" 
         g.game_strength = "2" */
+
