@@ -2,6 +2,7 @@
 /* Story 1*/
 CREATE DATABASE power_of_memorys CHARACTER SET utf8;
 USE power_of_memorys;
+
 CREATE TABLE players(
     id_player INT NOT NULL AUTO_INCREMENT,
     email VARCHAR(40) NOT NULL,
@@ -13,8 +14,6 @@ CREATE TABLE players(
     UNIQUE KEY (email)
     UNIQUE KEY (pseudo)
     );
-
-    
 
 CREATE TABLE scores(
     id_score INT NOT NULL AUTO_INCREMENT,
@@ -41,7 +40,6 @@ CREATE TABLE games(
     game_name VARCHAR(40) NOT NULL,
     PRIMARY KEY(id_game)
     );
-
 
 /* Story 2*/
 INSERT INTO players(email, player_password, pseudo, date_sign_up, date_last_login) 
@@ -105,11 +103,9 @@ VALUES  ('1', '1','cc', NOW()),
         ('5', '1','cc', NOW()),
         ('5', '1','cc', NOW());
 
-
 /* Story 3 */
 INSERT INTO players (email,player_password,pseudo,date_sign_up),
 VALUES ('jonathan42@gmail.com','691388b7f8a1cb32890e337055d8893444fd237cfe85d111430d093fd2ee4f91','jonathan',NOW());
-
 
 /* Story 4 */
 UPDATE players
@@ -122,7 +118,6 @@ WHERE id_player = 1;
 
 /* Story 5*/
 SELECT * FROM players WHERE email = 'adresse_email_utilisateur' AND player_password = 'mot_de_passe_utilisateur';
-
 
 /* Story 6 */ 
 INSERT INTO games(game_name) 
