@@ -36,9 +36,3 @@ CREATE TABLE games(
     game_name VARCHAR(40) NOT NULL,
     PRIMARY KEY(id_game)
     );
-
-
-
-
-
-c
