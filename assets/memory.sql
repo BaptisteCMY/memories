@@ -120,6 +120,13 @@ SET email = 'jon2211@gmail.com'
 WHERE id_player = 1;
 
 
+/* Story 5 */ 
+SELECT * 
+FROM players 
+WHERE email = 'adresse_email_utilisateur' 
+AND player_password = 'mot_de_passe_utilisateur';
+
+
 /* Story 6 */ 
 INSERT INTO games(game_name) 
 VALUES('The Power Of Memory');
