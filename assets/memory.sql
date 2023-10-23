@@ -48,7 +48,24 @@ CREATE TABLE games(
     PRIMARY KEY(id_game)
     );
 
+/* Story 3 */
+INSERT INTO players (email,player_password,pseudo,date_sign_up),
+VALUES ('jonathan42@gmail.com','691388b7f8a1cb32890e337055d8893444fd237cfe85d111430d093fd2ee4f91','jonathan',NOW());
 
+
+/* Story 4 */
+UPDATE players
+SET player_password = '691388b7f8a1cb32890e337055d8893444fd237cfe85d111430d093fd2ee0000'
+WHERE id_player = 1;
+
+UPDATE players
+SET email = 'jon2211@gmail.com'
+WHERE id_player = 1;
+
+
+/* Story 6 */ 
+INSERT INTO games(game_name) 
+VALUES('The Power Of Memory');
 
 
 
