@@ -7,5 +7,28 @@ CREATE TABLE player(
     pseudo VARCHAR(20) NOT NULL,
     date_sign_up DATETIME NOT NULL,
     date_last_login DATETIME NOT NULL,
-    PRIMARY KEY(id)
-    )
+    PRIMARY KEY(id_player)
+    );
+
+
+    CREATE TABLE scores(
+    id_score INT NOT NULL AUTO_INCREMENT,
+    id_player INT NOT NULL,
+    id_game INT NOT NULL,
+    game_strength INT NOT NULL,
+    game_score INT NOT NULL,
+    game_date DATETIME NOT NULL,
+    PRIMARY KEY(id_score)
+    );
+
+
+        CREATE TABLE games(
+    id_game INT NOT NULL AUTO_INCREMENT,
+    game_name VARCHAR(40) NOT NULL,
+    PRIMARY KEY(id_game)
+    );
+
+
+
+
+
