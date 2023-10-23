@@ -140,4 +140,3 @@ WHERE   g.game_name = "The Power Of Memory";
 /*      p.pseudo = "jonathan" 
         g.game_strength = "2" */
 
-
