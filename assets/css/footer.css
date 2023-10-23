@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 
+html,body{
+  font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
 
 
 
@@ -50,4 +55,12 @@ ul{
   
   }
 
+.liens{
+    color: #cab8c1;
+    text-decoration: none;
+}
 
+.lienfooter{
+    text-decoration: none;
+    color: #cab8c1;
+}
