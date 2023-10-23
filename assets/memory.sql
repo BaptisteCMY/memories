@@ -8,10 +8,13 @@ CREATE TABLE player(
     date_sign_up DATETIME NOT NULL,
     date_last_login DATETIME NOT NULL,
     PRIMARY KEY(id_player)
+    UNIQUE KEY (email)
+    UNIQUE KEY (pseudo)
     );
 
+    
 
-    CREATE TABLE scores(
+CREATE TABLE scores(
     id_score INT NOT NULL AUTO_INCREMENT,
     id_player INT NOT NULL,
     id_game INT NOT NULL,
@@ -21,14 +24,25 @@ CREATE TABLE player(
     PRIMARY KEY(id_score)
     );
 
+CREATE TABLE message(
+    id_message INT NOT NULL AUTO_INCREMENT,
+    id_game INT NOT NULL,
+    id_sender INT NOT NULL,
+    comment TEXT NOT NULL,
+    date_comment DATETIME NOT NULL,
+    PRIMARY KEY(id_message)
+    );
 
-        CREATE TABLE games(
+CREATE TABLE games(
     id_game INT NOT NULL AUTO_INCREMENT,
     game_name VARCHAR(40) NOT NULL,
     PRIMARY KEY(id_game)
     );
 
+/*story 3*/
 
+INSERT INTO players (email,player_password,pseudo,date_sign_up),
+VALUES ("email","player_password","pseudo","date_sign_up");
 
-
+/* inseré dans la table players valeur nouveaux joueur*/
 
