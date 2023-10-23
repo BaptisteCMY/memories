@@ -1,4 +1,4 @@
-/* Story 1*/
+/* Story 1 */
 CREATE DATABASE power_of_memorys CHARACTER SET utf8;
 USE power_of_memorys;
 CREATE TABLE players(
@@ -119,26 +119,6 @@ UPDATE players
 SET email = 'jon2211@gmail.com'
 WHERE id_player = 1;
 
-/* story 6 */
-
-INSERT INTO games(game_name) 
-VALUES('The Power Of Memory');
-
-/* story 7 */
-SELECT S.*, P.* FROM scores AS S
-     INNER JOIN players AS P
-          ON S.id_player = P.id_player
-
-/* story 8 */
-
-SELECT g.game_name, p.pseudo, s.game_strength, s.game_score
-FROM games AS g
-INNER JOIN scores AS s ON game.id_game = scores.id_game
-INNER JOIN players AS p ON game.id_player = players.id_player;
-ORDER BY g.game_name, g.game_strength, s.game_score ASC
-WHERE g.game_name = 'The power of Memory'
-/*    p.pseudo = 'jonathan'
-      g.game_strength = '2'  */
 
 /* Story 6 */ 
 INSERT INTO games(game_name) 
@@ -160,8 +140,8 @@ WHERE   g.game_name = "The Power Of Memory";
 /*      p.pseudo = "jonathan" 
         g.game_strength = "2" */
 
-/* story 10 */
 
+/* story 10 */
 INSERT INTO message ( id_game , id_sender, comment ,date_comment)
 FROM message
 VALUES (1,2,'Bonjour !',NOW());
