@@ -7,5 +7,14 @@ CREATE TABLE player(
     pseudo VARCHAR(20) NOT NULL,
     date_sign_up DATETIME NOT NULL,
     date_last_login DATETIME NOT NULL,
-    PRIMARY KEY(id)
-    )
+    PRIMARY KEY(id_player)
+    );
+
+    CREATE TABLE message(
+        id_message INT NOT NULL AUTO_INCREMENT,
+        id_game INT NOT NULL,
+        id_sender INT NOT NULL,
+        comment TEXT NOT NULL,
+        date_comment DATETIME NOT NULL,
+        PRIMARY KEY(id_message)
+    );
