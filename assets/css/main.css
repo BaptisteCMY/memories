@@ -202,7 +202,6 @@ h1 {
     left: 20px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 
 
 body{
@@ -398,12 +397,13 @@ margin: 20px;
     background: rgb(105,18,100);
     background: radial-gradient(circle, rgba(105,18,100,1) 0%, rgba(21,18,49,1) 100%);
 right:0;
-
+bottom: 0;
 width: 25vw;
-height: 45vh;
+height: 35vh;
+
 box-shadow:  14px 14px 28px #05040f,
              -14px -14px 28px #15123d;
-             overflow-y: scroll;
+        
              
 
 
@@ -607,6 +607,13 @@ box-shadow:  14px 14px 28px #05040f,
 
 
 
+
+}
+
+.button-open{
+position: fixed;
+   
+             
 
 }
 

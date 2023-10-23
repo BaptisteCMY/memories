@@ -23,7 +23,7 @@
           <a href="contact.html" class="lien">Nous contacter</a>
           </div>
         </div>
-        <div><center><h1 class="couleur1">Le Jeu</h1></center></div>
+        <div><center><h1 class="couleur1">LE JEU</h1></center></div>
       </div>
     
       <br/>
@@ -73,6 +73,14 @@
         </div>
       </div>
       <center><div class="border_jeu"></div></center>
+
+  
+
+
+  
+      
+   
+      
       <br><br>
       <div class="jeu_carte">
         <div class="ligne_jeu">
@@ -103,6 +111,28 @@
           </div>
         </div>
         </div>
+      
+        <div class="chat-popup" id="chat-popup" style="margin-top: -122px;">
+          
+          <div class="chat-title"><div style="display: flex;  font-size: 15; width: 200%;"><span style="margin-left: 10px; color: white;margin-top: 2vh;"> Username  <br><span style="color: green; font-size: 9px; top: 50px;"><i class="fa-regular fa-circle-dot"></i> EN LIGNE</span></span> </div>
+            <div style="width: 53%;display: flex;"><a id="closebtn" style="margin-top: 2vh;float:right; color: white; font-size: 19px;"><i class="fa-solid fa-circle-xmark"></i></a></div>
+          </div>
+         
+          <div class="bubble left">Salut comment tu vas ?</div>
+      <div class="bubble right">Ca va et toi</div>
+      <div class="bubble left">Ca va</div>
+      <div class="bubble right">Super</div>
+      <div class="bubble right">Parfait alors</div>
+      
+
+
+
+
+      <input type="text" style="width: 94.5%;border-radius: 0px;  position: fixed; bottom: 0;" placeholder="Saisissez votre message...">
+        </div>
+
+      
+
       <footer style="background-color: #0c0b26;">
         <div class="footer-content">
             <div class="info">
@@ -139,4 +169,24 @@
         <br>
     </footer>
     </body>
+
+    <script>
+      let closebtn = document.getElementById("closebtn");
+      let popup = document.getElementById("chat-popup");
+  
+      closebtn.addEventListener("click", () => {
+
+        if(popup.style.display != "none")
+        {
+       
+        popup.style.display = 'none'; 
+        }
+
+        else{
+          popup.style.display = 'grid'; 
+        }
+
+
+       });
+  </script>
     </html>
