@@ -9,6 +9,8 @@ CREATE TABLE players(
     date_sign_up DATETIME NOT NULL,
     date_last_login DATETIME NOT NULL,
     PRIMARY KEY(id_player)
+    UNIQUE KEY (email)
+    UNIQUE KEY (pseudo)
     );
 
     
@@ -53,22 +55,22 @@ VALUES(1, 1, 1, 1580, NOW()),
 ( 1, 1, 1, 1690, NOW()),
 ( 1, 1, 1, 1650, NOW()),
 ( 1, 1, 1, 1845, NOW()),
-( 2, 1, 1580, NOW()),
+( 2, 1, 1, 1580, NOW()),
 ( 2, 1, 1, 1345, NOW()),
 ( 2, 1, 1, 1690, NOW()),
 ( 2, 1, 1, 1650, NOW()),
 ( 2, 1, 1, 1845, NOW()),
-( 3, 1, 1580, NOW()),
+( 3, 1, 1, 1580, NOW()),
 ( 3, 1, 1, 1345, NOW()),
 ( 3, 1, 1, 1690, NOW()),
 ( 3, 1, 1, 1650, NOW()),
 ( 3, 1, 1, 1845, NOW()),
-( 4, 1, 1580, NOW()),
+( 4, 1, 1, 1580, NOW()),
 ( 4, 1, 1, 1345, NOW()),
 ( 4, 1, 1, 1690, NOW()),
 ( 4, 1, 1, 1650, NOW()),
 ( 4, 1, 1, 1845, NOW()),
-( 5, 1, 1580, NOW()),
+( 5, 1, 1, 1580, NOW()),
 ( 5, 1, 1, 1345, NOW()),
 ( 5, 1, 1, 1690, NOW()),
 ( 5, 1, 1, 1650, NOW()),
@@ -107,5 +109,9 @@ INSERT INTO games(game_name) VALUES('The Power Of Memory');
 
 
 
+/* Story 3 */
+INSERT INTO players (email,player_password,pseudo,date_sign_up),
+VALUES ('jonathan42@gmail.com','691388b7f8a1cb32890e337055d8893444fd237cfe85d111430d093fd2ee4f91','jonathan',NOW());
+        
 
 
