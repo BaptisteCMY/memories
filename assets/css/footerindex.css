@@ -3,6 +3,7 @@
 
 
 .footer-content {
+.footer-content {
 
     display: flex;
     justify-content: space-between;
@@ -85,4 +86,5 @@
 
 .ancre:hover{
     background-color: #ec9123c3;
+}
 }
