@@ -1,10 +1,7 @@
 CREATE DATABASE power_of_memory CHARACTER SET utf8;
 USE power_of_memory;
-
-SELECT email, player_password;
-FROM players;
-WHERE email = email, player_password = player_password;
-
+/*Story 5*/
+SELECT * FROM players WHERE email = 'adresse_email_utilisateur' AND player_password = 'mot_de_passe_utilisateur';
 
 
 CREATE TABLE players(
