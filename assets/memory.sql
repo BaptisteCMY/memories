@@ -1,3 +1,4 @@
+/* Story 1*/
 CREATE DATABASE power_of_memorys CHARACTER SET utf8;
 USE power_of_memorys;
 /*Story 5*/
