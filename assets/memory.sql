@@ -1,5 +1,5 @@
-CREATE DATABASE power_of_memorys CHARACTER SET utf8;
-USE power_of_memorys;
+CREATE DATABASE power_of_memory CHARACTER SET utf8;
+USE power_of_memory;
 CREATE TABLE players(
     id_player INT NOT NULL AUTO_INCREMENT,
     email VARCHAR(40) NOT NULL,
@@ -52,22 +52,22 @@ VALUES(1, 1, 1, 1580, NOW()),
 ( 1, 1, 1, 1690, NOW()),
 ( 1, 1, 1, 1650, NOW()),
 ( 1, 1, 1, 1845, NOW()),
-( 2, 1, 1580, NOW()),
+( 2, 1,1, 1580, NOW()),
 ( 2, 1, 1, 1345, NOW()),
 ( 2, 1, 1, 1690, NOW()),
 ( 2, 1, 1, 1650, NOW()),
 ( 2, 1, 1, 1845, NOW()),
-( 3, 1, 1580, NOW()),
+( 3, 1,1, 1580, NOW()),
 ( 3, 1, 1, 1345, NOW()),
 ( 3, 1, 1, 1690, NOW()),
 ( 3, 1, 1, 1650, NOW()),
 ( 3, 1, 1, 1845, NOW()),
-( 4, 1, 1580, NOW()),
+( 4, 1,1, 1580, NOW()),
 ( 4, 1, 1, 1345, NOW()),
 ( 4, 1, 1, 1690, NOW()),
 ( 4, 1, 1, 1650, NOW()),
 ( 4, 1, 1, 1845, NOW()),
-( 5, 1, 1580, NOW()),
+( 5, 1,1, 1580, NOW()),
 ( 5, 1, 1, 1345, NOW()),
 ( 5, 1, 1, 1690, NOW()),
 ( 5, 1, 1, 1650, NOW()),
@@ -101,6 +101,9 @@ VALUES('1', '1','cc', NOW()),
 ('5', '1','cc', NOW());
 
 INSERT INTO games(game_name) VALUES('The Power Of Memory');
+
+
+
 
 
 
