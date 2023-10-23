@@ -103,9 +103,6 @@ VALUES  ('1', '1','cc', NOW()),
         ('5', '1','cc', NOW()),
         ('5', '1','cc', NOW());
 
-INSERT INTO games(game_name) 
-VALUES('The Power Of Memory');
-
 
 /* Story 3 */
 INSERT INTO players (email,player_password,pseudo,date_sign_up),
@@ -122,4 +119,6 @@ SET email = 'jon2211@gmail.com'
 WHERE id_player = 1;
 
 
-
+/* Story 6 */ 
+INSERT INTO games(game_name) 
+VALUES('The Power Of Memory');
