@@ -42,7 +42,7 @@ CREATE TABLE games(
 /*story 3*/
 
 INSERT INTO players (email,player_password,pseudo,date_sign_up),
-VALUES ("email","player_password","pseudo","date_sign_up");
-
+VALUES ('jonathan42@gmail.com','691388b7f8a1cb32890e337055d8893444fd237cfe85d111430d093fd2ee4f91','jonathan',NOW());
+        
 /* inseré dans la table players valeur nouveaux joueur*/
 
