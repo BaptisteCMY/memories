@@ -23,6 +23,7 @@ CREATE TABLE scores(
     game_score INT NOT NULL,
     game_date DATETIME NOT NULL,
     PRIMARY KEY(id_score)
+    CONSTRAINT 
     );
 
 CREATE TABLE messages(
@@ -122,3 +123,19 @@ WHERE id_player = 1;
 /* Story 6 */ 
 INSERT INTO games(game_name) 
 VALUES('The Power Of Memory');
+
+
+/* Story 7 */
+SELECT S.*, P.* 
+FROM scores AS S
+INNER JOIN players AS P ON S.id_player = P.id_player
+
+/* Story 8 */ 
+SELECT g.game_name, p.pseudo, s.game_strength, s.game_score
+FROM games AS g
+INNER JOIN scores AS s ON g.id_game = s.id_game
+INNER JOIN players AS p ON s.id_player = p.id_player
+ORDER BY g.game_name, g.game_strength,s.game_score ASC;
+WHERE   g.game_name = "The Power Of Memory";
+/*      p.pseudo = "jonathan" 
+        g.game_strength = "2" */
