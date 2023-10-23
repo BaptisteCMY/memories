@@ -1,6 +1,11 @@
 CREATE DATABASE power_of_memory CHARACTER SET utf8;
 USE power_of_memory;
 
+SELECT email, player_password;
+FROM players;
+WHERE email = email, player_password = player_password;
+
+
 
 CREATE TABLE players(
     id_player INT NOT NULL AUTO_INCREMENT,
