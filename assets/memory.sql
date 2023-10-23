@@ -1,6 +1,11 @@
 CREATE DATABASE power_of_memory CHARACTER SET utf8;
 USE power_of_memory ;
-CREATE TABLE player(
+
+SELECT email, player_password;
+FROM players;
+WHERE email = email, player_password = player_password;
+
+CREATE TABLE players(
     id_player INT NOT NULL AUTO_INCREMENT,
     email VARCHAR(40) NOT NULL,
     player_password VARCHAR(256) NOT NULL,
@@ -22,7 +27,7 @@ CREATE TABLE scores(
     PRIMARY KEY(id_score)
     );
 
-CREATE TABLE message(
+CREATE TABLE messages(
     id_message INT NOT NULL AUTO_INCREMENT,
     id_game INT NOT NULL,
     id_sender INT NOT NULL,
@@ -36,6 +41,8 @@ CREATE TABLE games(
     game_name VARCHAR(40) NOT NULL,
     PRIMARY KEY(id_game)
     );
+
+
 
 
 
