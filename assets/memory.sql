@@ -1,5 +1,5 @@
 CREATE DATABASE power_of_memory CHARACTER SET utf8;
-USE power_of_memory ;
+USE power_of_memory;
 
 SELECT email, player_password;
 FROM players;
