@@ -8,9 +8,9 @@ CREATE TABLE players(
     pseudo VARCHAR(20) NOT NULL,
     date_sign_up DATETIME NOT NULL,
     date_last_login DATETIME NOT NULL,
-    PRIMARY KEY(id_player)
+    PRIMARY KEY(id_player),
     UNIQUE KEY (email),
-    UNIQUE KEY (pseudo),
+    UNIQUE KEY (pseudo)
     );
 
     
@@ -183,3 +183,18 @@ ORDER BY m.date_comment DESC;
 SELECT *
 FROM scores
 WHERE pseudo = %'au'%
+
+/* Story 13 */
+CREATE TABLE private_messages(
+    id_private_message INT NOT NULL AUTO_INCREMENT,
+    id_first_user INT NOT NULL,
+    id_sec_user INT NOT NULL,
+    comment TEXT NOT NULL,
+    is_read BOOLEAN NOT NULL,
+    date_send_comment DATETIME NOT NULL,
+    date_read_comment DATETIME NOT NULL,
+    PRIMARY KEY (id_private_message),
+    CONSTRAINT fk_privates_messages_players FOREIGN KEY (id_first_user) REFERENCES players(id_player) ON DELETE CASCADE
+    CONSTRAINT fk_privates_messages_players FOREIGN KEY (id_sec_user) REFERENCES players(id_player) ON DELETE CASCADE
+);
+
