@@ -118,6 +118,13 @@ UPDATE players
 SET email = 'jon2211@gmail.com'
 WHERE id_player = 1;
 
+/* story 5 */
+/Story 5/
+SELECT * 
+FROM players 
+WHERE email = 'adresse_email_utilisateur' 
+AND player_password = 'mot_de_passe_utilisateur';
+
 /* story 6 */
 
 INSERT INTO games(game_name) 
@@ -125,24 +132,50 @@ VALUES('The Power Of Memory');
 
 /* story 7 */
 SELECT S.*, P.* FROM scores AS S
-     INNER JOIN players AS P
+     LEFT JOIN players AS P
           ON S.id_player = P.id_player
 
 /* story 8 */
 
 SELECT g.game_name, p.pseudo, s.game_strength, s.game_score
 FROM games AS g
-INNER JOIN scores AS s ON game.id_game = scores.id_game
-INNER JOIN players AS p ON game.id_player = players.id_player;
+LEFT JOIN players AS p ON game.id_player = players.id_player;
 ORDER BY g.game_name, g.game_strength, s.game_score ASC
 WHERE g.game_name = 'The power of Memory'
 /*    p.pseudo = 'jonathan'
       g.game_strength = '2'  */
 
+/* story 9 */
+INSERT INTO scores(id_player, id_game, game_strength, game_score, game_date)
+VALUES(1,1,54,1580, NOW()) 
+ON DUPLICATE KEY UPDATE
+game_strength = 54,
+game_score = 108,
+game_date = NOW();
+
 
 /* story 10 */
 
-INSERT INTO message ( id_game , id_sender, comment ,date_comment)
+INSERT INTO message (id_game , id_sender, comment ,date_comment)
 FROM message
 VALUES (1,2,'Bonjour !',NOW());
-   
+
+/* story 11 */
+SELECT m.comment, p.pseudo, m.date_comment
+CASE WHEN m.id_sender = 5 
+THEN TRUE 
+ELSE FALSE 
+END AS isSender
+FROM messages AS m
+LEFT JOIN players AS p ON m.id_sender = p.id_player
+WHERE m.date_comment >= NOW() - INTERVAL 24 HOUR
+ORDER BY m.date_comment DESC;
+
+
+/* Story 12 */
+SELECT
+FROM scores
+WHERE pseudo = %'au'%
+
+
+
