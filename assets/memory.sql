@@ -22,11 +22,11 @@ CREATE TABLE games(
 
 
 
-CREATE TABLE message(
+CREATE TABLE messages(
     id_message INT NOT NULL AUTO_INCREMENT,
     id_game INT NOT NULL,
     id_sender INT NOT NULL,
-    comment TEXT NOT NULL,
+    comments TEXT NOT NULL,
     date_comment DATETIME NOT NULL,
     PRIMARY KEY(id_message),
     CONSTRAINT fk_messages_games FOREIGN KEY (id_game) REFERENCES games(id_game) ON DELETE CASCADE,
@@ -112,8 +112,8 @@ VALUES  ('1', '1','cc', NOW()),
 
 
 /* Story 3 */
-INSERT INTO players (email,player_password,pseudo,date_sign_up),
-VALUES ('jonathan42@gmail.com','691388b7f8a1cb32890e337055d8893444fd237cfe85d111430d093fd2ee4f91','jonathan',NOW());
+INSERT INTO players (email,player_password,pseudo,date_sign_up,date_last_login)
+VALUES ('jon.com','691388b7f8a1cb32890e337055d8893444fd237cfe85d111430d093fd2ee4f91','jon',NOW(),NOW());
 
 
 /* Story 4 */
@@ -129,8 +129,8 @@ WHERE id_player = 1;
 /* Story 5 */ 
 SELECT * 
 FROM players 
-WHERE email = 'adresse_email_utilisateur' 
-AND player_password = 'mot_de_passe_utilisateur';
+WHERE email = 'jon2211@gmail.com' 
+AND player_password = '691388b7f8a1cb32890e337055d8893444fd237cfe85d111430d093fd2ee0000';
 
 
 /* Story 6 */ 
@@ -141,15 +141,15 @@ VALUES('The Power Of Memory');
 /* Story 7 */
 SELECT S.*, P.* 
 FROM scores AS S
-INNER JOIN players AS P ON S.id_player = P.id_player
+LEFT JOIN players AS P ON S.id_player = P.id_player
 
 /* Story 8 */ 
 SELECT g.game_name, p.pseudo, s.game_strength, s.game_score
 FROM games AS g
 LEFT JOIN scores AS s ON g.id_game = s.id_game
 LEFT JOIN players AS p ON s.id_player = p.id_player
-ORDER BY g.game_name, g.game_strength,s.game_score ASC;
-WHERE   g.game_name = "The Power Of Memory";
+WHERE g.game_name = 'The Power Of Memory'
+ORDER BY g.game_name, s.game_strength, s.game_score ASC;
 /*      p.pseudo = "jonathan" 
         g.game_strength = "2" */
 
@@ -163,16 +163,15 @@ game_date = NOW();
 
 
 /* story 10 */
-INSERT INTO message ( id_game , id_sender, comment ,date_comment)
-FROM message
-VALUES (1,2,'Bonjour !',NOW());
+INSERT INTO messages ( id_game , id_sender, comments ,date_comment)
+VALUES (1,2,'Bonjour !',NOW());SELECT * FROM `messages` WHERE 1;
 
 
 /* Story 11 */
-SELECT m.comment, p.pseudo, m.date_comment
-CASE WHEN m.id_sender = '5' 
-THEN TRUE 
-ELSE FALSE 
+SELECT m.comments, p.pseudo, m.date_comment,
+CASE WHEN m.id_sender = '2'
+THEN TRUE
+ELSE FALSE
 END AS isSender
 FROM messages AS m
 LEFT JOIN players AS p ON m.id_sender = p.id_player
@@ -180,9 +179,11 @@ WHERE m.date_comment >= NOW() - INTERVAL 24 HOUR
 ORDER BY m.date_comment DESC;
 
 /* Story 12 */
-SELECT *
-FROM scores
-WHERE pseudo = %'au'%
+SELECT * , p.pseudo
+FROM scores as s
+LEFT JOIN players AS p
+	ON p.id_player = s.id_player
+WHERE pseudo LIKE '%ath%';
 
 /* Story 13 */
 CREATE TABLE private_messages(
@@ -192,9 +193,15 @@ CREATE TABLE private_messages(
     comment TEXT NOT NULL,
     is_read BOOLEAN NOT NULL,
     date_send_comment DATETIME NOT NULL,
-    date_read_comment DATETIME NOT NULL,
+    date_read_comment DATETIME,
     PRIMARY KEY (id_private_message),
-    CONSTRAINT fk_privates_messages_players FOREIGN KEY (id_first_user) REFERENCES players(id_player) ON DELETE CASCADE
-    CONSTRAINT fk_privates_messages_players FOREIGN KEY (id_sec_user) REFERENCES players(id_player) ON DELETE CASCADE
 );
+
+/* Story 15 */
+SELECT id_first_user, id_sec_user, date_send_comment, date_read_comment, is_read
+FROM private_messages
+WHERE id_first_user = 1 
+ORDER BY date_send_comment DESC;
+LIMIT 1 ;
+
 
