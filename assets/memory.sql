@@ -160,11 +160,11 @@ VALUES (1,2,'Bonjour !',NOW());
 
 
 /* Story 11 */
-SELECT m.comment AS comment, p.pseudo AS pseudo, m.date_comment AS date_heure_comment,
-/*CASE WHEN m.id_sender = 5 
+SELECT m.comment, p.pseudo, m.date_comment
+CASE WHEN m.id_sender = 5 
 THEN TRUE 
 ELSE FALSE 
-END AS isSender */
+END AS isSender
 FROM messages AS m
 INNER JOIN players AS p ON m.id_sender = p.id_player
 WHERE m.date_comment >= NOW() - INTERVAL 24 HOUR
