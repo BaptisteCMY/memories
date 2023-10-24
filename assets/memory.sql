@@ -190,18 +190,52 @@ CREATE TABLE private_messages(
     id_private_message INT NOT NULL AUTO_INCREMENT,
     id_first_user INT NOT NULL,
     id_sec_user INT NOT NULL,
-    comment TEXT NOT NULL,
+    comments TEXT NOT NULL,
     is_read BOOLEAN NOT NULL,
     date_send_comment DATETIME NOT NULL,
     date_read_comment DATETIME,
     PRIMARY KEY (id_private_message),
+    CONSTRAINT fk_private_players FOREIGN KEY (id_first_user) REFERENCES players(id_player) ON DELETE CASCADE,
+    CONSTRAINT fk_private_players2 FOREIGN KEY (id_sec_user) REFERENCES players(id_player) ON DELETE CASCADE
 );
 
+/* STORY 14 */
+INSERT INTO private_messages(id_first_user, id_sec_user, comments, is_read, date_send_comment, date_read_comment) 
+VALUES('1','2','coucou ça va', false, '2023-10-24 10:34:09', NULL),
+('2','1','ça va et toi ?', false, '2023-10-24 10:36:29', NULL),
+('1','2','bien, tfq ?', false, '2023-10-24 10:37:12', NULL),
+('2','1','Je joue à Power Of Memory', false, '2023-10-24 10:39:21', NULL),
+('1','2','Oh moi aussi !', false, '2023-10-24 10:40:21', NULL),
+('2','1','Cool tu me rejoins ?', false, '2023-10-24 10:40:21', NULL),
+('1','5','salut', false, '2023-10-24 11:05:42', NULL),
+('4','1','aurevoir', false, '2023-10-24 11:10:11', NULL),
+('1','2','Salut tu vas bien', false, '2023-10-24 11:15:22', NULL),
+('2','5','Tranquille tu vien jouer a POM', false, '2023-10-24 11:20:15', NULL),
+('4','2','Flemme', false, '2023-10-24 11:21:15', NULL),
+('4','2','Tu viens lancer une game ?', false, '2023-10-24 11:24:15', NULL),
+('2','4','non pas avec toi', false,'2023-10-24 11:27:15', NULL),
+('4','2','pas cool ça', false, '2023-10-24 11:28:19', NULL),
+('5','1','Vien POM je te detruis', false, '2023-10-24 11:41:13', NULL),
+('1','5','Non', false, '2023-10-24 11:43:13', NULL),
+('5','2','comment tu vas', false, '2023-10-24 11:44:13', NULL),
+('2','5','tranquillement', false, '2023-10-24 11:45:13', NULL),
+('5','2','cool alors', false, '2023-10-24 11:46:08', NULL),
+('4','1','tfq ?', false,'2023-10-24 11:58:02', NULL);
+
+
+DELETE FROM private_messages 
+WHERE id_private_message=12;
+
+UPDATE private_messages 
+SET comments = 'message modifie' 
+WHERE id_private_message=14; 
+
+
 /* Story 15 */
-SELECT id_first_user, id_sec_user, date_send_comment, date_read_comment, is_read
+SELECT id_first_user, id_sec_user, comments, date_send_comment, date_read_comment, is_read
 FROM private_messages
 WHERE id_first_user = 1 
 ORDER BY date_send_comment DESC;
 LIMIT 1 ;
 
-
+/* Story 16 */
