@@ -161,11 +161,16 @@ VALUES (1,2,'Bonjour !',NOW());
 
 /* Story 11 */
 SELECT m.comment, p.pseudo, m.date_comment
-CASE WHEN m.id_sender = 5 
+CASE WHEN m.id_sender = '5' 
 THEN TRUE 
 ELSE FALSE 
 END AS isSender
 FROM messages AS m
 INNER JOIN players AS p ON m.id_sender = p.id_player
 WHERE m.date_comment >= NOW() - INTERVAL 24 HOUR
-/* ORDER BY m.date_comment DESC; */
+ORDER BY m.date_comment DESC;
+
+/* Story 12 */
+SELECT *
+FROM scores
+WHERE pseudo = %'au'%
