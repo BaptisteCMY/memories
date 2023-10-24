@@ -197,6 +197,39 @@ CREATE TABLE private_messages(
     PRIMARY KEY (id_private_message),
 );
 
+
+/* STORY 14 */
+INSERT INTO private_messages(id_first_user, id_sec_user, comment, is_read, date_send_comment, date_read_comment) 
+VALUES('1','2','coucou ça va', false, '20231024 10:34:09 AM', NULL),
+('2','1','ça va et toi ?', false, '20231024 10:36:29 AM', NULL),
+('1','2','bien, tfq ?', false, '20231024 10:37:12 AM', NULL),
+('2','1','Je joue à Power Of Memory', false, '20231024 10:39:21 AM', NULL),
+('1','2','Oh moi aussi !', false, '20231024 10:40:21 AM', NULL),
+('2','1','Cool tu me rejoins ?', false, '20231024 10:40:21 AM', NULL),
+('1','5','salut', false, '20231024 11:05:42 AM', NULL),
+('4','1','aurevoir', false, '20231024 11:10:11 AM', NULL),
+('1','2','Salut tu vas bien', false, '20231024 11:15:22 AM', NULL),
+('2','5','Tranquille tu vien jouer a POM', false, '20231024 11:20:15 AM', NULL),
+('4','2','Flemme', false, '20231024 11:21:15 AM', NULL),
+('4','2','Tu viens lancer une game ?', false, '20231024 11:24:15 AM', NULL),
+('2','4','non pas avec toi', false,'20231024 11:27:15 AM', NULL),
+('4','2','pas cool ça', false, '20231024 11:28:19 AM', NULL),
+('5','1','Vien POM je te detruis', false, '20231024 11:41:13 AM', NULL),
+('1','5','Non', false, '20231024 11:43:13 AM', NULL),
+('5','2','comment tu vas', false, '20231024 11:44:13 AM', NULL),
+('2','5','tranquillement', false, '20231024 11:45:13 AM', NULL),
+('5','2','cool alors', false, '20231024 11:46:08 AM', NULL),
+('4','1','tfq ?', false,'20231024 11:58:02 AM', NULL);
+
+
+DELETE FROM private_messages 
+WHERE id_private_message=12;
+
+UPDATE private_messages 
+SET comment = 'message modifie' 
+WHERE id_private_message=14; 
+
+
 /* Story 15 */
 SELECT id_first_user, id_sec_user, date_send_comment, date_read_comment, is_read
 FROM private_messages
@@ -205,3 +238,14 @@ ORDER BY date_send_comment DESC;
 LIMIT 1 ;
 
 
+
+/* STORY 17 */
+SELECT * FROM scores 
+WHERE YEAR(game_date) = 2023;
+
+
+/* STORY 18 */
+SELECT * FROM scores 
+WHERE YEAR(game_date) = 2023
+ORDER BY MONTH(game_date) ASC;
+LIMIT 12;
