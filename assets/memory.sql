@@ -36,8 +36,6 @@ CREATE TABLE message(
     PRIMARY KEY(id_message)
     CONSTRAINT fk_messages_games FOREIGN KEY (id_game) REFERENCES games(id_game) ON DELETE CASCADE,
     CONSTRAINT fk_messages_players FOREIGN KEY (id_sender) REFERENCES players(id_player) ON DELETE CASCADE
-
-
     );
 
 CREATE TABLE games(
@@ -151,6 +149,14 @@ ORDER BY g.game_name, g.game_strength,s.game_score ASC;
 WHERE   g.game_name = "The Power Of Memory";
 /*      p.pseudo = "jonathan" 
         g.game_strength = "2" */
+
+/* Story 9 */
+INSERT INTO scores(id_player, id_game, game_strength, game_score, game_date)
+VALUES(1,1,54,1580, NOW()) 
+ON DUPLICATE KEY UPDATE
+game_strength = 3,
+game_score = 108,
+game_date = NOW();
 
 
 /* story 10 */
