@@ -23,7 +23,7 @@ CREATE TABLE scores(
     game_score INT NOT NULL,
     game_date DATETIME NOT NULL,
     PRIMARY KEY(id_score)
-    CONSTRAINT fk_scores_players FOREIGN KEY (id_player) REFERENCES players(id_player) ON DELETE CASCADE
+    CONSTRAINT fk_scores_players FOREIGN KEY (id_player) REFERENCES players(id_player) ON DELETE CASCADE,
     CONSTRAINT fk_scores_games FOREIGN KEY (id_game) REFERENCES games(id_game) ON DELETE CASCADE
     );
 
@@ -34,7 +34,7 @@ CREATE TABLE message(
     comment TEXT NOT NULL,
     date_comment DATETIME NOT NULL,
     PRIMARY KEY(id_message)
-    CONSTRAINT fk_messages_games FOREIGN KEY (id_game) REFERENCES games(id_game) ON DELETE CASCADE
+    CONSTRAINT fk_messages_games FOREIGN KEY (id_game) REFERENCES games(id_game) ON DELETE CASCADE,
     CONSTRAINT fk_messages_players FOREIGN KEY (id_sender) REFERENCES players(id_player) ON DELETE CASCADE
 
 
