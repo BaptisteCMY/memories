@@ -143,8 +143,8 @@ INNER JOIN players AS P ON S.id_player = P.id_player
 /* Story 8 */ 
 SELECT g.game_name, p.pseudo, s.game_strength, s.game_score
 FROM games AS g
-INNER JOIN scores AS s ON g.id_game = s.id_game
-INNER JOIN players AS p ON s.id_player = p.id_player
+LEFT JOIN scores AS s ON g.id_game = s.id_game
+LEFT JOIN players AS p ON s.id_player = p.id_player
 ORDER BY g.game_name, g.game_strength,s.game_score ASC;
 WHERE   g.game_name = "The Power Of Memory";
 /*      p.pseudo = "jonathan" 
@@ -172,7 +172,7 @@ THEN TRUE
 ELSE FALSE 
 END AS isSender
 FROM messages AS m
-INNER JOIN players AS p ON m.id_sender = p.id_player
+LEFT JOIN players AS p ON m.id_sender = p.id_player
 WHERE m.date_comment >= NOW() - INTERVAL 24 HOUR
 ORDER BY m.date_comment DESC;
 
