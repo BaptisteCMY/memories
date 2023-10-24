@@ -197,4 +197,8 @@ CREATE TABLE private_messages(
     CONSTRAINT fk_privates_messages_players FOREIGN KEY (id_first_user) REFERENCES players(id_player) ON DELETE CASCADE
     CONSTRAINT fk_privates_messages_players FOREIGN KEY (id_sec_user) REFERENCES players(id_player) ON DELETE CASCADE
 );
-
+/* Story 16 */
+SELECT comment, date_send_comment
+FROM private_messages
+WHERE (id_first_user = 1 AND id_sec_user = 2) OR (id_first_user = 2 AND id_sec_user = 1)
+ORDER BY date_send_comment;
