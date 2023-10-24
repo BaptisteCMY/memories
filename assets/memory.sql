@@ -9,11 +9,30 @@ CREATE TABLE players(
     date_sign_up DATETIME NOT NULL,
     date_last_login DATETIME NOT NULL,
     PRIMARY KEY(id_player)
-    UNIQUE KEY (email)
-    UNIQUE KEY (pseudo)
+    UNIQUE KEY (email),
+    UNIQUE KEY (pseudo),
     );
 
     
+CREATE TABLE games(
+    id_game INT NOT NULL AUTO_INCREMENT,
+    game_name VARCHAR(40) NOT NULL,
+    PRIMARY KEY(id_game)
+    );
+
+
+
+CREATE TABLE message(
+    id_message INT NOT NULL AUTO_INCREMENT,
+    id_game INT NOT NULL,
+    id_sender INT NOT NULL,
+    comment TEXT NOT NULL,
+    date_comment DATETIME NOT NULL,
+    PRIMARY KEY(id_message),
+    CONSTRAINT fk_messages_games FOREIGN KEY (id_game) REFERENCES games(id_game) ON DELETE CASCADE,
+    CONSTRAINT fk_messages_players FOREIGN KEY (id_sender) REFERENCES players(id_player) ON DELETE CASCADE
+    );
+
 
 CREATE TABLE scores(
     id_score INT NOT NULL AUTO_INCREMENT,
@@ -22,27 +41,11 @@ CREATE TABLE scores(
     game_strength INT NOT NULL,
     game_score INT NOT NULL,
     game_date DATETIME NOT NULL,
-    PRIMARY KEY(id_score)
+    PRIMARY KEY(id_score),
     CONSTRAINT fk_scores_players FOREIGN KEY (id_player) REFERENCES players(id_player) ON DELETE CASCADE,
     CONSTRAINT fk_scores_games FOREIGN KEY (id_game) REFERENCES games(id_game) ON DELETE CASCADE
     );
 
-CREATE TABLE message(
-    id_message INT NOT NULL AUTO_INCREMENT,
-    id_game INT NOT NULL,
-    id_sender INT NOT NULL,
-    comment TEXT NOT NULL,
-    date_comment DATETIME NOT NULL,
-    PRIMARY KEY(id_message)
-    CONSTRAINT fk_messages_games FOREIGN KEY (id_game) REFERENCES games(id_game) ON DELETE CASCADE,
-    CONSTRAINT fk_messages_players FOREIGN KEY (id_sender) REFERENCES players(id_player) ON DELETE CASCADE
-    );
-
-CREATE TABLE games(
-    id_game INT NOT NULL AUTO_INCREMENT,
-    game_name VARCHAR(40) NOT NULL,
-    PRIMARY KEY(id_game)
-    );
 
 
 /* Story 2*/
