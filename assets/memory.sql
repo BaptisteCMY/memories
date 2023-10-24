@@ -183,3 +183,8 @@ ORDER BY m.date_comment DESC;
 SELECT *
 FROM scores
 WHERE pseudo = %'au'%
+
+
+
+
+
