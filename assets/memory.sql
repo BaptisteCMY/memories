@@ -1,6 +1,7 @@
 /* Story 1 */
 CREATE DATABASE power_of_memorys CHARACTER SET utf8;
 USE power_of_memorys;
+
 CREATE TABLE players(
     id_player INT NOT NULL AUTO_INCREMENT,
     email VARCHAR(40) NOT NULL,
@@ -89,26 +90,26 @@ VALUES  ('1', '1','cc', NOW()),
         ('1', '1','cc', NOW()),
         ('1', '1','cc', NOW()),
         ('1', '1','cc', NOW()),
-        ('2', '1','cc', NOW()),
-        ('2', '1','cc', NOW()),
-        ('2', '1','cc', NOW()),
-        ('2', '1','cc', NOW()),
-        ('2', '1','cc', NOW()),
-        ('3', '1','cc', NOW()),
-        ('3', '1','cc', NOW()),
-        ('3', '1','cc', NOW()),
-        ('3', '1','cc', NOW()),
-        ('3', '1','cc', NOW()),
-        ('4', '1','cc', NOW()),
-        ('4', '1','cc', NOW()),
-        ('4', '1','cc', NOW()),
-        ('4', '1','cc', NOW()),
-        ('4', '1','cc', NOW()),
-        ('5', '1','cc', NOW()),
-        ('5', '1','cc', NOW()),
-        ('5', '1','cc', NOW()),
-        ('5', '1','cc', NOW()),
-        ('5', '1','cc', NOW());
+        ('1', '1','cc', NOW()),
+        ('1', '1','cc', NOW()),
+        ('1', '1','cc', NOW()),
+        ('1', '1','cc', NOW()),
+        ('1', '1','cc', NOW()),
+        ('1', '1','cc', NOW()),
+        ('1', '1','cc', NOW()),
+        ('1', '1','cc', NOW()),
+        ('1', '1','cc', NOW()),
+        ('1', '1','cc', NOW()),
+        ('1', '1','cc', NOW()),
+        ('1', '1','cc', NOW()),
+        ('1', '1','cc', NOW()),
+        ('1', '1','cc', NOW()),
+        ('1', '1','cc', NOW()),
+        ('1', '1','cc', NOW()),
+        ('1', '1','cc', NOW()),
+        ('1', '1','cc', NOW()),
+        ('1', '1','cc', NOW()),
+        ('1', '1','cc', NOW());
 
 
 /* Story 3 */
@@ -198,7 +199,10 @@ CREATE TABLE private_messages(
     CONSTRAINT fk_privates_messages_players FOREIGN KEY (id_sec_user) REFERENCES players(id_player) ON DELETE CASCADE
 );
 /* Story 16 */
-SELECT comment, date_send_comment
-FROM private_messages
-WHERE (id_first_user = 1 AND id_sec_user = 2) OR (id_first_user = 2 AND id_sec_user = 1)
-ORDER BY date_send_comment;
+SELECT U.pseudo,M.id_sec_user, M.comment, M.date_send_comment, M.date_read_comment 
+FROM private_messages AS M
+INNER JOIN players AS U 
+ON  M.id_sec_user = U.id_player
+ORDER BY M.date_send_comment DESC;
+
+
