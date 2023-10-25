@@ -202,12 +202,12 @@ CREATE TABLE private_messages(
 /* STORY 14 */
 INSERT INTO private_messages(id_first_user, id_sec_user, comments, is_read, date_send_comment, date_read_comment) 
 VALUES(1,2,'coucou ça va', false, '2023-10-24 10:34:09', NULL),
-(1,5,'ça va et toi ?', false, '2023-10-24 10:36:29', NULL),
+(1,2,'ça va et toi ?', false, '2023-10-24 10:36:29', NULL),
 (1,2,'bien, tfq ?', false, '2023-10-24 10:37:12', NULL),
 (2,1,'Je joue à Power Of Memory', false, '2023-10-24 10:39:21', NULL),
 (1,2,'Oh moi aussi !', false, '2023-10-24 10:40:21', NULL),
 (1,3,'Cool tu me rejoins ?', false, '2023-10-24 10:40:21', NULL),
-(1,5,'salut', false, '2023-10-24 11:05:42', NULL),
+(1,3,'salut', false, '2023-10-24 11:05:42', NULL),
 (4,1,'aurevoir', false, '2023-10-24 11:10:11', NULL),
 (1,4,'Salut tu vas bien', false, '2023-10-24 11:15:22', NULL),
 (2,5,'Tranquille tu vien jouer a POM', false, '2023-10-24 11:20:15', NULL),
@@ -216,10 +216,10 @@ VALUES(1,2,'coucou ça va', false, '2023-10-24 10:34:09', NULL),
 (2,4,'non pas avec toi', false,'2023-10-24 11:27:15', NULL),
 (4,2,'pas cool ça', false, '2023-10-24 11:28:19', NULL),
 (1,3,'Vien POM je te detruis', false, '2023-10-24 11:41:13', NULL),
-(1,5,'Non', false, '2023-10-24 11:43:13', NULL),
-(5,1,'comment tu vas', false, '2023-10-24 11:44:13', NULL),
+(1,3,'Non', false, '2023-10-24 11:43:13', NULL),
+(3,1,'comment tu vas', false, '2023-10-24 11:44:13', NULL),
 (2,1,'tranquillement', false, '2023-10-24 11:45:13', NULL),
-(5,2,'cool alors', false, '2023-10-24 11:46:08', NULL),
+(1,2,'cool alors', false, '2023-10-24 11:46:08', NULL),
 (4,1,'tfq ?', false,'2023-10-24 11:58:02', NULL);
 
 
@@ -232,7 +232,7 @@ WHERE id_private_message=14;
 
 
 /* Story 15 */
-SELECT p1.pseudo, p2.pseudo, date_send_comment, date_read_comment, is_read
+SELECT p1.pseudo, p2.pseudo, date_send_comment, date_read_comment, is_read,
 FROM private_messages AS pm
 INNER JOIN players AS p1 ON pm.id_first_user = p1.id_player
 INNER JOIN players AS p2 ON pm.id_sec_user = p2.id_player
@@ -242,3 +242,42 @@ WHERE (id_first_user = 1 OR id_sec_user = 1) AND date_send_comment = (
 	WHERE (pm2.id_first_user = pm.id_first_user AND pm2.id_sec_user = pm.id_sec_user) 
     OR (pm2.id_first_user = pm.id_sec_user AND pm2.id_sec_user = pm.id_first_user)
 );
+
+/* Story 16 */
+SELECT p1.pseudo, p2.pseudo, date_send_comment, date_read_comment, is_read, 
+(SELECT COUNT(s.id_player)  FROM scores AS s WHERE s.id_player = pm.id_first_user) AS nbr_parties_jouées_par_joueur1,
+(SELECT COUNT(s.id_player)  FROM scores AS s WHERE s.id_player = pm.id_sec_user) AS nbr_parties_jouées_par_joueur2,
+(SELECT DISTINCT g.game_name 
+ FROM games AS g 
+    INNER JOIN scores AS s ON s.id_game = g.id_game 
+    WHERE g.id_game = 
+        (SELECT id_game
+        FROM scores
+        WHERE id_player = pm.id_first_user
+        GROUP BY id_game
+        ORDER BY COUNT(*) DESC
+        LIMIT 1)) AS jeu_plus_joué_first_user,
+(SELECT DISTINCT g.game_name 
+ FROM games AS g 
+    INNER JOIN scores AS s ON s.id_game = g.id_game 
+    WHERE g.id_game = 
+        (SELECT id_game
+        FROM scores
+        WHERE id_player = pm.id_first_user
+        GROUP BY id_game
+        ORDER BY COUNT(*) DESC
+        LIMIT 1)) AS jeu_plus_joué_sec_user        
+    
+
+FROM private_messages AS pm
+INNER JOIN players AS p1 ON pm.id_first_user = p1.id_player
+INNER JOIN players AS p2 ON pm.id_sec_user = p2.id_player
+WHERE (id_first_user = 1 OR id_sec_user = 1) AND date_send_comment = (
+    SELECT MAX(date_send_comment)
+    FROM private_messages AS pm2
+	WHERE (pm2.id_first_user = pm.id_first_user AND pm2.id_sec_user = pm.id_sec_user) 
+    OR (pm2.id_first_user = pm.id_sec_user AND pm2.id_sec_user = pm.id_first_user)
+    ORDER BY pm.date_send_comment ASC
+);
+
+
