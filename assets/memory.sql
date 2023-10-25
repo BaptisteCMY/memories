@@ -84,31 +84,31 @@ VALUES  ( 1, 1, 1, 1580, NOW()),
         ( 5, 1, 1, 1845, NOW());
 
 INSERT INTO messages(id_game, id_sender, comment, date_comment) 
-VALUES  ('1', '1','cc', NOW()),
-        ('1', '1','cc', NOW()),
-        ('1', '1','cc', NOW()),
-        ('1', '1','cc', NOW()),
-        ('1', '1','cc', NOW()),
-        ('2', '1','cc', NOW()),
-        ('2', '1','cc', NOW()),
-        ('2', '1','cc', NOW()),
-        ('2', '1','cc', NOW()),
-        ('2', '1','cc', NOW()),
-        ('3', '1','cc', NOW()),
-        ('3', '1','cc', NOW()),
-        ('3', '1','cc', NOW()),
-        ('3', '1','cc', NOW()),
-        ('3', '1','cc', NOW()),
-        ('4', '1','cc', NOW()),
-        ('4', '1','cc', NOW()),
-        ('4', '1','cc', NOW()),
-        ('4', '1','cc', NOW()),
-        ('4', '1','cc', NOW()),
-        ('5', '1','cc', NOW()),
-        ('5', '1','cc', NOW()),
-        ('5', '1','cc', NOW()),
-        ('5', '1','cc', NOW()),
-        ('5', '1','cc', NOW());
+VALUES  (1, 1,'cc', NOW()),
+        (1, 1,'cc', NOW()),
+        (1, 1,'cc', NOW()),
+        (1, 1,'cc', NOW()),
+        (1, 1,'cc', NOW()),
+        (1, 1,'cc', NOW()),
+        (1, 1,'cc', NOW()),
+        (1, 1,'cc', NOW()),
+        (1, 1,'cc', NOW()),
+        (1, 1,'cc', NOW()),
+        (1, 1,'cc', NOW()),
+        (1, 1,'cc', NOW()),
+        (1, 1,'cc', NOW()),
+        (1, 1,'cc', NOW()),
+        (1, 1,'cc', NOW()),
+        (1, 1,'cc', NOW()),
+        (1, 1,'cc', NOW()),
+        (1, 1,'cc', NOW()),
+        (1, 1,'cc', NOW()),
+        (1, 1,'cc', NOW()),
+        (1, 1,'cc', NOW()),
+        (1, 1,'cc', NOW()),
+        (1, 1,'cc', NOW()),
+        (1, 1,'cc', NOW()),
+        (1, 1,'cc', NOW()),
 
 
 /* Story 3 */
@@ -239,8 +239,7 @@ WHERE pm.id_first_user = 1 AND pm.id_sec_user IN (
     WHERE id_first_user = 1
     GROUP BY id_sec_user
     HAVING MAX(date_send_comment) = pm.date_send_comment
+    LIMIT 1
 )
 ORDER BY pm.date_send_comment DESC;
 
-
-/* Story 18 */
