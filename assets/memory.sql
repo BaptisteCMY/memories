@@ -209,13 +209,13 @@ VALUES('1','2','coucou ça va', false, '2023-10-24 10:34:09', NULL),
 ('2','1','Cool tu me rejoins ?', false, '2023-10-24 10:40:21', NULL),
 ('1','5','salut', false, '2023-10-24 11:05:42', NULL),
 ('4','1','aurevoir', false, '2023-10-24 11:10:11', NULL),
-('1','2','Salut tu vas bien', false, '2023-10-24 11:15:22', NULL),
+('1','4','Salut tu vas bien', false, '2023-10-24 11:15:22', NULL),
 ('2','5','Tranquille tu vien jouer a POM', false, '2023-10-24 11:20:15', NULL),
 ('4','2','Flemme', false, '2023-10-24 11:21:15', NULL),
 ('4','2','Tu viens lancer une game ?', false, '2023-10-24 11:24:15', NULL),
 ('2','4','non pas avec toi', false,'2023-10-24 11:27:15', NULL),
 ('4','2','pas cool ça', false, '2023-10-24 11:28:19', NULL),
-('5','1','Vien POM je te detruis', false, '2023-10-24 11:41:13', NULL),
+('1','3','Vien POM je te detruis', false, '2023-10-24 11:41:13', NULL),
 ('1','5','Non', false, '2023-10-24 11:43:13', NULL),
 ('5','2','comment tu vas', false, '2023-10-24 11:44:13', NULL),
 ('2','5','tranquillement', false, '2023-10-24 11:45:13', NULL),
@@ -232,10 +232,15 @@ WHERE id_private_message=14;
 
 
 /* Story 15 */
-SELECT id_first_user, id_sec_user, comments, date_send_comment, date_read_comment, is_read
-FROM private_messages
-WHERE id_first_user = 1 
-ORDER BY date_send_comment DESC;
-LIMIT 1 ;
+SELECT pm.id_first_user, pm.id_sec_user, pm.comments, pm.date_send_comment, pm.date_read_comment, pm.is_read
+FROM private_messages AS pm
+WHERE pm.id_first_user = 1 AND pm.id_sec_user IN (
+    SELECT id_sec_user
+    WHERE id_first_user = 1
+    GROUP BY id_sec_user
+    HAVING MAX(date_send_comment) = pm.date_send_comment
+)
+ORDER BY pm.date_send_comment DESC;
 
-/* Story 16 */
+
+/* Story 18 */
