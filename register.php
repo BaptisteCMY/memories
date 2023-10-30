@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href ="assets/css/main_score.css">
-    <link rel="stylesheet" href ="assets/css/main_score.css">
     <link rel="stylesheet" href ="assets/css/header.css">
-    <link rel="stylesheet" href="assets/css/footerindex.css">
     <link rel="stylesheet" href="assets/css/footerindex.css">
     <script src="https://kit.fontawesome.com/fd7b39a087.js" crossorigin="anonymous"></script>
     <title>Exemple de lien cliquable stylisé</title>
@@ -28,15 +26,15 @@
     
         <div class="header">
             
-          <a href="index.html" class="lien" style="font-size: 1.5em;">The Power of memory</a>
+          <a href="index.php" class="lien" style="font-size: 1.5em;">The Power of memory</a>
           <div class="header-right">
-          <a href="index.html" class="lien">Accueil</a>
-          <a href="jeu.html" class="lien">Jeu</a>
-          <a href="score.html" class="lien">Scores</a>
-          <a href="connexion.html" class="lien">Connexion</a>
-          <a href="inscription.html" class="lien">Inscription</a>
-          <a href="mon-espace.html" class="lien">Mon espace</a>
-          <a href="contact.html" class="lien">Nous contacter</a>
+          <a href="index.php" class="lien">Accueil</a>
+          <a href="games/memory/index.php" class="lien">Jeu</a>
+          <a href="games/memory/scores.php" class="lien">Scores</a>
+          <a href="login.php" class="lien">Connexion</a>
+          <a href="register.php" class="lien">Inscription</a>
+          <a href="myAccount.php" class="lien">Mon espace</a>
+          <a href="contact.php" class="lien">Nous contacter</a>
             </div>
             
           </div>

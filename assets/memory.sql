@@ -57,7 +57,7 @@ VALUES  ('jonathan42@gmail.com', '691388b7f8a1cb32890e337055d8893444fd237cfe85d1
         ('antoine.dubleuil@sfr.fr', 'f270398c8432ab9540cd0832d950973f170061284aa38012c2fbf80f7fb28370', 'antoinegaming', NOW(),NOW());
 
 INSERT INTO scores(id_player, id_game, game_strength, game_score,  game_date) 
-VALUES  INSERT INTO scores (id_player, id_game, game_strength, game_score, game_date)
+VALUES
 (1, 1, 1, 1580, '2023-01-15 10:30'),
 (1, 1, 1, 1345, '2023-01-25 14:45'),
 (1, 1, 1, 1690, '2023-02-05 17:20'),
@@ -121,7 +121,7 @@ VALUES  INSERT INTO scores (id_player, id_game, game_strength, game_score, game_
 (2, 1, 1, 1345, '2023-04-25 11:10'),
 (2, 1, 1, 1690, '2023-05-07 09:30'),
 (2, 1, 1, 1650, '2023-05-19 08:50'),
-(3, 1, 1, 1845, '2023-06-01 10:25')
+(3, 1, 1, 1845, '2023-06-01 10:25'),
 (1, 1, 1, 1580, '2023-06-12 14:15'),
 (1, 1, 1, 1345, '2023-06-28 16:30'),
 (1, 1, 1, 1690, '2023-07-15 19:20'),
@@ -184,7 +184,7 @@ VALUES  (1, 1,'cc', NOW()),
 
 /* Story 3 */
 INSERT INTO players (email,player_password,pseudo,date_sign_up,date_last_login)
-VALUES ('jon.com','691388b7f8a1cb32890e337055d8893444fd237cfe85d111430d093fd2ee4f91','jon',NOW(),NOW());
+VALUES ('jon@gmail.com','691388b7f8a1cb32890e337055d8893444fd237cfe85d111430d093fd2ee4f91','jon',NOW(),NOW());
 
 
 /* Story 4 */
@@ -235,7 +235,7 @@ game_date = NOW();
 
 /* story 10 */
 INSERT INTO messages ( id_game , id_sender, comments ,date_comment)
-VALUES (1,2,'Bonjour !',NOW());SELECT * FROM `messages` WHERE 1;
+VALUES (1,2,'Bonjour !',NOW());
 
 
 /* Story 11 */
