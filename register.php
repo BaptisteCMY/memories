@@ -44,10 +44,12 @@
 <br>
         
     </br>
-    <form action="traitement.php" method="post">
+    <form action="utils/userConnexion.php" method="post">
+
+    <?php if(isset($_GET['error'])){ echo '<center> <span style="color: red;">'.$_GET['error'].'</span></center>'; }?>
 <div class="input-container"></div>
 <center><label for="email"></label>
-    <input type="email" id="email" name="email" placeholder="  Email" style="height: 2vw; width: 31.5vw; font-size: 1.1vw; " required> </center>
+    <input type="text" id="email" name="email" placeholder="  Email" style="height: 2vw; width: 31.5vw; font-size: 1.1vw; " required> </center>
 </br>
 
 <center><label for="pseudo"></label>
@@ -65,7 +67,7 @@
           </br>
 
           <center>
-          <button class="button_validation_inscription">Inscription</button>
+          <button type="submit" name="registerme" class="button_validation_inscription">Inscription</button>
           <br><br>
         </center>
 </center>
