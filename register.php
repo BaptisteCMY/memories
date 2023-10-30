@@ -1,25 +1,7 @@
+<?php require_once("utils/common.php") ?>
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href ="assets/css/main_score.css">
-    <link rel="stylesheet" href ="assets/css/header.css">
-    <link rel="stylesheet" href="assets/css/footerindex.css">
-    <script src="https://kit.fontawesome.com/fd7b39a087.js" crossorigin="anonymous"></script>
-    <title>Exemple de lien cliquable stylisé</title>
-    <style>
-        .button-link {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #3498db;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-    </style>
-</head>
+<?= require_once(SITE_ROOT."partials/head.php");?>
 <body style="background-color: #151231; background-size: 1520px 800px;">
     
     <div class="under-header" id="top">        
