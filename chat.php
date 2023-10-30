@@ -12,7 +12,7 @@
 </head>
 <body style="background-color: #151231; background-size: 1520px 800px;">
     
-    <div class="under-header">        
+    <div class="under-header">         
     
         <div class="header">
             <div id="contentContainer">
