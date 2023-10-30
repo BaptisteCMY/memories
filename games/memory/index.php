@@ -11,16 +11,15 @@
     </head>
     <body style="background-color: #151231;; background-size: 1520px 800px;">
       <div class="under-header">        
-        <div class="header">
-          <a href="index.html" class="lien" style="font-size: 1.5em;">The Power of memory</a>
+         <a href="../../index.php" class="lien" style="font-size: 1.5em;">The Power of memory</a>
           <div class="header-right">
-          <a href="index.html" class="lien">Accueil</a>
-          <a href="jeu.html" class="lien">Jeu</a>
-          <a href="score.html" class="lien">Scores</a>
-          <a href="connexion.html" class="lien">Connexion</a>
-          <a href="inscription.html" class="lien">Inscription</a>
-          <a href="mon-espace.html" class="lien">Mon espace</a>
-          <a href="contact.html" class="lien">Nous contacter</a>
+          <a href="../../index.php" class="lien">Accueil</a>
+          <a href="index.php" class="lien">Jeu</a>
+          <a href="scores.php" class="lien">Scores</a>
+          <a href="../../login.php" class="lien">Connexion</a>
+          <a href="../../register.php" class="lien">Inscription</a>
+          <a href="../../myAccount.php" class="lien">Mon espace</a>
+          <a href="../../contact.php" class="lien">Nous contacter</a>
           </div>
         </div>
         <div><center><h1 class="couleur1">LE JEU</h1></center></div>
